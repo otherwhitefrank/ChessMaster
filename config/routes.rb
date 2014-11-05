@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :player_profiles
+
   resources :game_boards
 
   get 'welcome/start_game'
