@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  set_of_pieces: 
+  list_of_moves: 
+  winner: MyString
+  loser: MyString
+  user_id_1: MyString
+  user_id_2: MyString
+  active?: false
+  turn: 1
+
+two:
+  set_of_pieces: 
+  list_of_moves: 
+  winner: MyString
+  loser: MyString
+  user_id_1: MyString
+  user_id_2: MyString
+  active?: false
+  turn: 1

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  game_id: 1
+  white_game_timer: 1
+  black_game_timer: 1
+  timestamp: 2014-11-05 14:44:07
+
+two:
+  game_id: 1
+  white_game_timer: 1
+  black_game_timer: 1
+  timestamp: 2014-11-05 14:44:07

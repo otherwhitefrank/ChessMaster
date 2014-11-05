@@ -1,0 +1,49 @@
+<%= form_for(@game_board) do |f| %>
+  <% if @game_board.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game_board.errors.count, "error") %> prohibited this game_board from being saved:</h2>
+
+      <ul>
+      <% @game_board.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :set_of_pieces %><br>
+    <%= f.text_field :set_of_pieces %>
+  </div>
+  <div class="field">
+    <%= f.label :list_of_moves %><br>
+    <%= f.text_field :list_of_moves %>
+  </div>
+  <div class="field">
+    <%= f.label :winner %><br>
+    <%= f.text_field :winner %>
+  </div>
+  <div class="field">
+    <%= f.label :loser %><br>
+    <%= f.text_field :loser %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id_1 %><br>
+    <%= f.text_field :user_id_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id_2 %><br>
+    <%= f.text_field :user_id_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :active? %><br>
+    <%= f.check_box :active? %>
+  </div>
+  <div class="field">
+    <%= f.label :turn %><br>
+    <%= f.number_field :turn %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
