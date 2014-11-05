@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :game_boards
-
   get 'welcome/start_game'
 
   get 'welcome/home'
