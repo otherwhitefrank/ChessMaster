@@ -1,0 +1,2 @@
+class King < GamePiece
+end
