@@ -11,56 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141110214325) do
-
-  create_table "game_boards", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "game_pieces", force: true do |t|
-    t.string   "type"
-    t.integer  "x"
-    t.integer  "y"
-    t.integer  "game_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "games", force: true do |t|
-    t.integer  "game_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "leader_boards", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "player_profiles", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "players", force: true do |t|
-    t.integer  "game_id"
-    t.integer  "wins"
-    t.integer  "losses"
-    t.string   "user_name"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "timers", force: true do |t|
-    t.integer  "game_id"
-    t.integer  "white_game_timer"
-    t.integer  "black_game_timer"
-    t.datetime "timestamp"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20141112232208) do
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -73,8 +24,6 @@ ActiveRecord::Schema.define(version: 20141110214325) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
