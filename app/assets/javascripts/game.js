@@ -46,7 +46,7 @@ Game.update = function() {
     }
 };
 
-$(document).ready(function () {
+function site_ready() {
     Game.initialize();
 
     Game.run = (function() {
@@ -71,4 +71,9 @@ $(document).ready(function () {
 
     window.setInterval(Game.run, 0);
 
-});
+}
+
+$(document).ready(site_ready);
+
+//Fixes turbo-link in rails
+$(document).on('page:load', site_ready);
