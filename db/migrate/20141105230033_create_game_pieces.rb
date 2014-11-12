@@ -1,7 +1,7 @@
 class CreateGamePieces < ActiveRecord::Migration
   def change
     create_table :game_pieces do |t|
-      t.string :type
+      t.string :piecetype
       t.integer :x
       t.integer :y
       t.integer :type
