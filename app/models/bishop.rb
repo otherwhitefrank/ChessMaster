@@ -1,0 +1,2 @@
+class Bishop < GamePiece
+end
