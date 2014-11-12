@@ -1,4 +1,5 @@
 class GameBoardsController < ApplicationController
+  respond_to :html, :xml, :json
   before_action :set_game_board, only: [:show, :edit, :update, :destroy]
 
   def index
