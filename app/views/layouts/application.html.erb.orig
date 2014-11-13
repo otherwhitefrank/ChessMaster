@@ -7,12 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<<<<<<< HEAD
+
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
   <%= yield %>
 
   <%= render 'layouts/user_widget' %>
+=======
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+	<%= yield %>
+<!--  <%= render 'layouts/_user_widget.rb' %>-->
+>>>>>>> 14e50ac8068b44bd83cd10c4345b5f180cb0daeb
 
 </body>
 </html>
