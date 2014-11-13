@@ -25,4 +25,7 @@ class GameBoard < ActiveRecord::Base
 	def open_square?
 	end
 
+	def within_board?
+	end
+
 end
