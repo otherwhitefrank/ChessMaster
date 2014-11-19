@@ -29,9 +29,19 @@ gem 'spring',        group: :development
 #devise
 gem 'devise'
 
-#bootstrap
-gem 'bootstrap-sass', '~> 3.2.0'
-gem 'autoprefixer-rails'
+#pusher
+gem 'pusher'
+
+#BootStrap and RubyRacer
+gem 'therubyracer'
+gem 'twitter-bootstrap-rails'
+
+#Helps with heroku, use postgres
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

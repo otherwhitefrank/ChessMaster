@@ -11,7 +11,7 @@ Game.initialize = function() {
     add_event_listener_mousedown(event_listener_mousedown);
     add_event_listener_mouseup(event_listener_mouseup);
     add_event_listener_mousemove(event_listener_mousemove);
-    add_event_listener_keyboard(event_listener_keyboard);
+    //add_event_listener_keyboard(event_listener_keyboard);
     init_board();
     init_pieces();
     draw_board();

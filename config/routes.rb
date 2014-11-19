@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  post 'broadcast/broadcast'
+
+  post 'broadcast/message'
+
   devise_for :users
   resources :player_profiles
 
