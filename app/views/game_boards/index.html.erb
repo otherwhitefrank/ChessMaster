@@ -3,8 +3,20 @@
 <% end %>
 
 <canvas id="myCanvas" width="675" height="675"
-        style="border:1px solid #000000;">
+        style="">
 </canvas>
+
+<form role="form">
+  <div class="form-group">
+    <label for="message">Message</label>
+    <input type="text" class="form-control" id="message"
+           placeholder="Enter message..." />
+  </div>
+</form>
+
+
+<div id="message-area">
+</div>
 
 <script type="text/javascript" charset="utf-8">
     var renderStats = new Stats();
