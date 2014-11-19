@@ -2,6 +2,8 @@ class GameBoardsController < ApplicationController
   respond_to :html, :xml, :json
   before_action :set_game_board, only: [:show, :edit, :update, :destroy]
 
+  before_action :authenticate_user! # in application_controller
+
   def index
     @game_boards = GameBoard.all
     respond_with(@game_boards)

@@ -1,6 +1,8 @@
 class PlayerProfilesController < ApplicationController
   respond_to :html, :xml, :json
   before_action :set_player_profile, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user! # in application_controller
+
 
   def index
     @player_profiles = PlayerProfile.all
