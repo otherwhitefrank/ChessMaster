@@ -20909,3 +20909,169 @@ Processing by BroadcastController#broadcast as */*
   [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
   Rendered text template (0.1ms)
 Completed 200 OK in 410ms (Views: 3.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/game_boards" for 127.0.0.1 at 2014-11-19 16:24:15 -0800
+Processing by GameBoardsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered game_boards/index.html.erb within layouts/application (71.9ms)
+  Rendered layouts/_user_widget.html.erb (0.8ms)
+Completed 200 OK in 863ms (Views: 718.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-19 16:24:16 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-19 16:24:16 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-19 16:24:16 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-19 16:24:16 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-19 16:24:16 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-19 16:24:16 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r2_c3.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r2_c1.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r2_c2.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r2_c6.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r2_c4.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r1_c3.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r2_c5.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r1_c4.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r1_c5.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r1_c1.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r1_c6.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r1_c2.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started GET "/assets//chess_pieces/Chess_symbols_r1_c6.png" for 127.0.0.1 at 2014-11-19 16:24:17 -0800
+
+
+Started POST "/broadcast/broadcast" for 127.0.0.1 at 2014-11-19 16:24:20 -0800
+Processing by BroadcastController#broadcast as */*
+  Parameters: {"message"=>"hello"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered text template (0.0ms)
+Completed 200 OK in 353ms (Views: 3.1ms | ActiveRecord: 0.2ms)
