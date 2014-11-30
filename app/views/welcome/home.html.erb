@@ -1,23 +1,44 @@
-    <!-- Main home page -->
-    <% if user_signed_in? %>
+<!-- Main home page -->
+<% if user_signed_in? %>
     <div class="jumbotron">
-     
-     <div class="container">
-      <center><h1>ChessMaster</h1><br>
-      <p class="lead">Welcome <%= current_user.email %>! Select one of the options below to get started.</p>
+
+      <div class="container">
+        <center><h1>ChessMaster</h1></center>
+        <br>
+
+        <p class="lead">Welcome <%= current_user.email %>! Select one of the options below to get started.</p>
+      </div>
+
+
+
+
+
+      <select name="onlineUsers" size="5">
+      <% @users = User.all %>
+      <% @users.each do |user| %>
+          <%= @online_now = user['updated_at'] > 10.minutes.ago %>
+          <%= @user_name = user['email'] %>
+          <option value="<%= @user_name%>"><%=@user_name%>, <%=@online_now %></option>
+      <% end %>
+      </select>
+
+
+      <div class="row">
+        <div class="col-lg-4">
+          <center><p><a class="btn btn-primary" href="welcome/start_game" role="button"><font color="white">Start
+            Match &raquo;</font></a></p></center>
         </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <center><p><a class="btn btn-primary" href="welcome/start_game" role="button"><font color="white">Start Match &raquo;</font></a></p></center>
-          </div>
-          <div class="col-lg-4">
-            <center><p><a class="btn btn-primary" href="welcome/start_game_with_player" role="button"><font color="white">Join Match &raquo;</font></a></p></center>
-          </div>
-          <div class="col-lg-4">
-            <center><p><a class="btn btn-primary" href="#" role="button"><font color="white">Resume Match &raquo;</a></font></p></center>
-          </div>
-
+        <div class="col-lg-4">
+          <center><p><a class="btn btn-primary" href="welcome/start_game_with_player" role="button"><font color="white">Join
+            Match &raquo;</font></a></p></center>
+        </div>
+        <div class="col-lg-4">
+          <center>
+            <p>
+              <a class="btn btn-primary" href="#" role="button"><span style="color: white; ">Resume Match &raquo;</span></a>
+            </p>
+          </center>
+        </div>
 
 
       </div>
@@ -25,19 +46,20 @@
     </div>
 
 
-    <% else %>
+<% else %>
     <div class="jumbotron">
-     <div class="container">
-      <center><h1>ChessMaster</h1><br>
-    	<p class="lead">Challenge other players online to a game of chess.<br>
-        Register today to build an online profile and make your way to the top of the leaderboard.</p></center>
-        </div>
+      <div class="container">
+        <center><h1>ChessMaster</h1><br>
+
+          <p class="lead">Challenge other players online to a game of chess.<br>
+            Register today to build an online profile and make your way to the top of the leaderboard.</p></center>
       </div>
-     <br>
-    <% end %>
-    
-    <center><br>
-      <%= render 'layouts/leaderboard' %>
-  	</center>
     </div>
-  </div>
+    <br>
+<% end %>
+
+<center><br>
+  <%= render 'layouts/leaderboard' %>
+</center>
+</div>
+</div>

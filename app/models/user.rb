@@ -5,4 +5,11 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_one :player
+
+  attr_accessor :updated_at
+
+  def online?
+    updated_at > 10.minutes.ago
+  end
+
 end
