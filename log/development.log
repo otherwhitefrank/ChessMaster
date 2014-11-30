@@ -21075,3 +21075,252 @@ Processing by BroadcastController#broadcast as */*
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
   Rendered text template (0.0ms)
 Completed 200 OK in 353ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+Processing by WelcomeController#home as HTML
+  Rendered layouts/_leaderboard.html.erb (0.4ms)
+  Rendered welcome/home.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_user_widget.html.erb (1.9ms)
+Completed 200 OK in 487ms (Views: 474.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 14:09:37 -0800
+
+
+Started GET "/assets/ico/favicon.ico" for 127.0.0.1 at 2014-11-26 14:09:38 -0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.ico"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/frank/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/frank/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/frank/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.1ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.2ms)
+
+
+Started GET "/game_boards" for 127.0.0.1 at 2014-11-26 14:09:49 -0800
+Processing by GameBoardsController#index as HTML
+Completed 401 Unauthorized in 6ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-26 14:09:49 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_user_widget.html.erb (0.5ms)
+Completed 200 OK in 255ms (Views: 240.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-26 14:09:51 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wOf2Y0U+X9v+bZZpdV8GGH4FQFh+hlr3BlBQMEEin78=", "user"=>{"email"=>"otherwhitefrank@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'otherwhitefrank@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-11-26 22:09:51.716860"], ["sign_in_count", 2]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/game_boards
+Completed 302 Found in 108ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/game_boards" for 127.0.0.1 at 2014-11-26 14:09:51 -0800
+Processing by GameBoardsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered game_boards/index.html.erb within layouts/application (23.7ms)
+  Rendered layouts/_user_widget.html.erb (0.3ms)
+Completed 200 OK in 256ms (Views: 249.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r2_c4.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r2_c3.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r2_c5.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r2_c1.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r2_c6.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r2_c2.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r1_c3.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r1_c4.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r1_c5.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r1_c1.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r1_c2.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started GET "/assets/chess_pieces/Chess_symbols_r1_c6.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started GET "/assets//chess_pieces/Chess_symbols_r1_c6.png" for 127.0.0.1 at 2014-11-26 14:09:52 -0800
+
+
+Started POST "/broadcast/broadcast" for 127.0.0.1 at 2014-11-26 14:09:57 -0800
+Processing by BroadcastController#broadcast as */*
+  Parameters: {"message"=>"hello"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered text template (0.0ms)
+Completed 200 OK in 528ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-26 14:10:37 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2YBxRNnFOyWnrqk9w+C8/9eKZggFo3+cFFOgdrHyZiM="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 29ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-26 14:10:37 -0800
+Processing by WelcomeController#home as HTML
+  Rendered layouts/_leaderboard.html.erb (0.1ms)
+  Rendered welcome/home.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_user_widget.html.erb (4.1ms)
+Completed 200 OK in 481ms (Views: 470.8ms | ActiveRecord: 0.0ms)
