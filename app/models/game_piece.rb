@@ -1,5 +1,7 @@
 class GamePiece < ActiveRecord::Base
 
+  belongs_to :game_board
+
 	attr_accessor :x
 	attr_accessor :y
 
@@ -12,5 +14,5 @@ class GamePiece < ActiveRecord::Base
 
 	def self.types
       %w(Pawn Bishop Knight Rook King Queen)
-    end
+  end
 end

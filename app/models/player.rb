@@ -1,5 +1,4 @@
 class Player < ActiveRecord::Base
-
 	attr_accessor :wins
 	attr_accessor :losses
 	attr_accessor :user_name
@@ -9,4 +8,5 @@ class Player < ActiveRecord::Base
 
 	belongs_to :user
 	has_one :player_profile
+
 end
