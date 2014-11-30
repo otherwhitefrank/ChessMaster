@@ -17,4 +17,12 @@ class Game < ActiveRecord::Base
 	def whose_turn?
 	end
 
+  def initiate_game(player_1, player_2, match_time)
+    player_1 = player_1
+    player_2 = player_2
+
+    GameBoard.create
+
+  end
+
 end

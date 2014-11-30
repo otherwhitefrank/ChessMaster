@@ -25939,3 +25939,2294 @@ Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 00:41:57 -0800
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 00:41:57 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddPlayingGameToUser (20141130202452)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "playing_game" boolean[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141130202452"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:25:49 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered layouts/_leaderboard.html.erb (1.5ms)
+  Rendered welcome/home.html.erb within layouts/application (94.1ms)
+  Rendered layouts/_user_widget.html.erb (5.5ms)
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "updated_at" = '2014-11-30 20:25:53.494716' WHERE "users"."id" = 1[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+Completed 200 OK in 3742ms (Views: 3703.0ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 12:25:53 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 12:25:53 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 12:25:53 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 12:25:53 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 12:25:53 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 12:25:53 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 12:25:53 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 12:25:54 -0800
+
+
+Started GET "/welcome/start_game" for 127.0.0.1 at 2014-11-30 12:26:11 -0800
+Processing by WelcomeController#start_game as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered welcome/start_game.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_user_widget.html.erb (4.4ms)
+  [1m[35m (0.9ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "updated_at" = '2014-11-30 20:26:13.878769' WHERE "users"."id" = 1[0m
+  [1m[35m (3.2ms)[0m  commit transaction
+Completed 200 OK in 2815ms (Views: 2777.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/welcome/start_game" for 127.0.0.1 at 2014-11-30 12:26:13 -0800
+Processing by WelcomeController#start_game as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered welcome/start_game.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_user_widget.html.erb (2.3ms)
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "updated_at" = '2014-11-30 20:26:16.824596' WHERE "users"."id" = 1[0m
+  [1m[35m (9.7ms)[0m  commit transaction
+Completed 200 OK in 2911ms (Views: 2867.1ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:27:36 -0800
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users"
+  Rendered layouts/_leaderboard.html.erb (1.7ms)
+  Rendered welcome/home.html.erb within layouts/application (32.5ms)
+  Rendered layouts/_user_widget.html.erb (1.9ms)
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "updated_at" = '2014-11-30 20:27:38.878503' WHERE "users"."id" = 1
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 2387ms (Views: 2360.9ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:27:38 -0800
+Processing by WelcomeController#home as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered layouts/_leaderboard.html.erb (0.4ms)
+  Rendered welcome/home.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_user_widget.html.erb (3.4ms)
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "updated_at" = '2014-11-30 20:27:41.472521' WHERE "users"."id" = 1[0m
+  [1m[35m (9.5ms)[0m  commit transaction
+Completed 200 OK in 2565ms (Views: 2539.0ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:27:42 -0800
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users"
+  Rendered layouts/_leaderboard.html.erb (0.5ms)
+  Rendered welcome/home.html.erb within layouts/application (20.6ms)
+  Rendered layouts/_user_widget.html.erb (1.7ms)
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "updated_at" = '2014-11-30 20:27:45.146748' WHERE "users"."id" = 1
+  [1m[36m (9.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 2609ms (Views: 2583.9ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 12:27:45 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:27:50 -0800
+Processing by WelcomeController#home as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered layouts/_leaderboard.html.erb (0.5ms)
+  Rendered welcome/home.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_user_widget.html.erb (2.1ms)
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mUPDATE "users" SET "updated_at" = '2014-11-30 20:27:53.070617' WHERE "users"."id" = 1[0m
+  [1m[35m (9.7ms)[0m  commit transaction
+Completed 200 OK in 2918ms (Views: 2890.7ms | ActiveRecord: 13.4ms)
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "updated_at" datetime, "playing_game" boolean) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141130202452')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141130074319')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:33:02 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_leaderboard.html.erb (1.8ms)
+  Rendered welcome/home.html.erb within layouts/application (43.9ms)
+  Rendered layouts/_user_widget.html.erb (8.9ms)
+Completed 200 OK in 3674ms (Views: 3653.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:06 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 12:33:07 -0800
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-30 12:33:16 -0800
+Processing by Devise::RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 11ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/models/user.rb:11:in `initialize'
+
+
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.2ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-30 12:33:16 -0800
+Processing by Devise::RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 6ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/models/user.rb:11:in `initialize'
+
+
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.7ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-30 12:35:55 -0800
+Processing by Devise::RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 5ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/models/user.rb:11:in `initialize'
+
+
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:36:19 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered layouts/_leaderboard.html.erb (2.1ms)
+  Rendered welcome/home.html.erb within layouts/application (29.6ms)
+  Rendered layouts/_user_widget.html.erb (6.4ms)
+Completed 200 OK in 3601ms (Views: 3585.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:23 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:24 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:25 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:25 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:25 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:25 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:25 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:25 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:25 -0800
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-30 12:36:27 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (219.2ms)
+  Rendered layouts/_user_widget.html.erb (4.9ms)
+Completed 200 OK in 2696ms (Views: 2667.6ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-30 12:36:42 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I4FCh2bYn4M77L1H8iV60xR5sgXsEKZ595DcDbUW9C0=", "user"=>{"email"=>"otherwhitefrank@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mUser Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'otherwhitefrank@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "updated_at") VALUES (?, ?, ?)  [["email", "otherwhitefrank@gmail.com"], ["encrypted_password", "$2a$10$zyjDuPHbKDf.MgZbqduYvODlgnj8KeymERGu0.ZxJqICms/chUQfW"], ["updated_at", "2014-11-30 20:36:42.489876"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-11-30 20:36:42.511550"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-11-30 20:36:42.511550"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-11-30 20:36:42.517068"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "users" SET "updated_at" = '2014-11-30 20:36:42.557681' WHERE "users"."id" = 1
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 302 Found in 205ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:36:42 -0800
+Processing by WelcomeController#home as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered layouts/_leaderboard.html.erb (0.5ms)
+  Rendered welcome/home.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_user_widget.html.erb (3.0ms)
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "users" SET "updated_at" = '2014-11-30 20:36:45.147361' WHERE "users"."id" = 1[0m
+  [1m[35m (9.6ms)[0m  commit transaction
+Completed 200 OK in 2558ms (Views: 2531.6ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:45 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:46 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 12:36:46 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:37:27 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered layouts/_leaderboard.html.erb (1.7ms)
+  Rendered welcome/home.html.erb within layouts/application (94.9ms)
+  Rendered layouts/_user_widget.html.erb (3.7ms)
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "updated_at" = '2014-11-30 20:37:31.696951' WHERE "users"."id" = 1[0m
+  [1m[35m (9.5ms)[0m  commit transaction
+Completed 200 OK in 3432ms (Views: 3390.0ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:37:31 -0800
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users"
+  Rendered layouts/_leaderboard.html.erb (0.5ms)
+  Rendered welcome/home.html.erb within layouts/application (30.7ms)
+  Rendered layouts/_user_widget.html.erb (2.2ms)
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "updated_at" = '2014-11-30 20:37:34.412521' WHERE "users"."id" = 1
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 2554ms (Views: 2521.5ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:34 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+
+Started GET "/assets/jquery.js.map" for 127.0.0.1 at 2014-11-30 12:37:35 -0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/jquery.js.map"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/frank/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/frank/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/frank/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (85.6ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.2ms)
+  Rendered /Users/frank/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (409.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:37:57 -0800
+Processing by WelcomeController#home as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered layouts/_leaderboard.html.erb (0.4ms)
+  Rendered welcome/home.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_user_widget.html.erb (2.1ms)
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "updated_at" = '2014-11-30 20:37:59.800469' WHERE "users"."id" = 1[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+Completed 200 OK in 2760ms (Views: 2743.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:59 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:59 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 12:37:59 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:00 -0800
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-30 12:38:11 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"I4FCh2bYn4M77L1H8iV60xR5sgXsEKZ595DcDbUW9C0="}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 148ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:38:11 -0800
+Processing by WelcomeController#home as HTML
+  Rendered layouts/_leaderboard.html.erb (0.5ms)
+  Rendered welcome/home.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_user_widget.html.erb (4.7ms)
+Completed 200 OK in 2705ms (Views: 2699.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 12:38:15 -0800
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-30 12:38:44 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (53.4ms)
+  Rendered layouts/_user_widget.html.erb (5.2ms)
+Completed 200 OK in 2782ms (Views: 2762.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-30 12:39:00 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5F4lcYbCBKbTzs0saqSTPJwT1eKrmDdSwVhlUvfN49k=", "user"=>{"email"=>"frankhdye@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "updated_at") VALUES (?, ?, ?)  [["email", "frankhdye@gmail.com"], ["encrypted_password", "$2a$10$kQxZlV8LpoAlKA8kvNwFy.2yX5JtmkXTHm92DMLzkkOxvogCUfk7m"], ["updated_at", "2014-11-30 20:39:01.000545"]]
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2[0m  [["current_sign_in_at", "2014-11-30 20:39:01.036859"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-11-30 20:39:01.036859"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-11-30 20:39:01.043621"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "users" SET "updated_at" = '2014-11-30 20:39:01.095045' WHERE "users"."id" = 2
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Completed 302 Found in 223ms (ActiveRecord: 16.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:39:01 -0800
+Processing by WelcomeController#home as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered layouts/_leaderboard.html.erb (0.5ms)
+  Rendered welcome/home.html.erb within layouts/application (18.8ms)
+  Rendered layouts/_user_widget.html.erb (3.0ms)
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "updated_at" = '2014-11-30 20:39:03.948375' WHERE "users"."id" = 2[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+Completed 200 OK in 2836ms (Views: 2803.6ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 12:39:04 -0800
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-30 12:40:35 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5F4lcYbCBKbTzs0saqSTPJwT1eKrmDdSwVhlUvfN49k="}
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 35532ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:41:10 -0800
+Processing by WelcomeController#home as HTML
+  Rendered layouts/_leaderboard.html.erb (0.6ms)
+  Rendered welcome/home.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_user_widget.html.erb (4.3ms)
+Completed 200 OK in 14130ms (Views: 2679.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-30 12:41:24 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5F4lcYbCBKbTzs0saqSTPJwT1eKrmDdSwVhlUvfN49k="}
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:41:24 -0800
+Processing by WelcomeController#home as HTML
+  Rendered layouts/_leaderboard.html.erb (0.5ms)
+  Rendered welcome/home.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_user_widget.html.erb (5.4ms)
+Completed 200 OK in 21191ms (Views: 2707.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:46 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:47 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:47 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:47 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 12:41:47 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 12:41:55 -0800
+Processing by WelcomeController#home as HTML
+  Rendered layouts/_leaderboard.html.erb (1.7ms)
+  Rendered welcome/home.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_user_widget.html.erb (6.9ms)
+Completed 200 OK in 3302ms (Views: 3296.1ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "updated_at" datetime, "playing_game" boolean) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141130202452')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141130074319')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (9.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "updated_at" datetime, "playing_game" boolean) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141130202452')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141130074319')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (9.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddUpdatedAtToUsers (20141130074319)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "updated_at" datetime
+SQLite3::SQLException: no such table: users: ALTER TABLE "users" ADD "updated_at" datetime
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUpdatedAtToUsers (20141130224935)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "updated_at" datetime[0m
+SQLite3::SQLException: no such table: users: ALTER TABLE "users" ADD "updated_at" datetime
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUpdatedAtToUsers (20141130224935)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "updated_at" datetime[0m
+SQLite3::SQLException: no such table: users: ALTER TABLE "users" ADD "updated_at" datetime
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUpdatedAtToUsers (20141130224935)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "updated_at" datetime[0m
+SQLite3::SQLException: no such table: users: ALTER TABLE "users" ADD "updated_at" datetime
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUpdatedAtToUsers (20141130224935)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "updated_at" datetime[0m
+SQLite3::SQLException: no such table: users: ALTER TABLE "users" ADD "updated_at" datetime
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "game_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "game_pieces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "x" integer, "y" integer, "type" integer, "game_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "leader_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "player_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "wins" integer, "losses" integer, "user_name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "timers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "white_game_timer" integer, "black_game_timer" integer, "timestamp" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "updated_at" datetime, "playing_game" boolean DEFAULT 'f') [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141105231921')[0m
+  [1m[36m (9.9ms)[0m  [1mDROP TABLE "game_boards"[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "game_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.2ms)[0m  [1mDROP TABLE "game_pieces"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "game_pieces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "x" integer, "y" integer, "type" integer, "game_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "leader_boards"[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "leader_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.2ms)[0m  [1mDROP TABLE "player_profiles"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "player_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mDROP TABLE "players"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "wins" integer, "losses" integer, "user_name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "timers"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "timers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "white_game_timer" integer, "black_game_timer" integer, "timestamp" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.2ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "updated_at" datetime, "playing_game" boolean DEFAULT 'f') 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_leaderboard.html.erb (0.6ms)
+  Rendered welcome/home.html.erb within layouts/application (21.6ms)
+  Rendered layouts/_user_widget.html.erb (2.9ms)
+Completed 200 OK in 506ms (Views: 494.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:28 -0800
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-30 14:58:32 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (28.2ms)
+  Rendered layouts/_user_widget.html.erb (1.2ms)
+Completed 200 OK in 324ms (Views: 288.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-30 14:58:34 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_user_widget.html.erb (0.4ms)
+Completed 200 OK in 225ms (Views: 218.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xmUoU+1LXht+yCQvuynFm1Ht+49jy/IzmeMCdeiKhJk=", "user"=>{"email"=>"otherwhitefrank@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'otherwhitefrank@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xmUoU+1LXht+yCQvuynFm1Ht+49jy/IzmeMCdeiKhJk=", "user"=>{"email"=>"otherwhitefrank@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_user_widget.html.erb (0.5ms)
+Completed 200 OK in 333ms (Views: 247.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:37 -0800
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_user_widget.html.erb (0.4ms)
+Completed 200 OK in 259ms (Views: 255.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:39 -0800
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xmUoU+1LXht+yCQvuynFm1Ht+49jy/IzmeMCdeiKhJk=", "user"=>{"email"=>"otherwhitefrank@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'otherwhitefrank@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "updated_at") VALUES (?, ?, ?)[0m  [["email", "otherwhitefrank@gmail.com"], ["encrypted_password", "$2a$10$v3VpfVmefefLgQwtTO2obev0H8C5m9AfNhnCgaou2aoFd4m1lIGdq"], ["updated_at", "2014-11-30 22:58:45.360796"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[35mSQL (0.8ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-11-30 22:58:45.366113"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-11-30 22:58:45.366113"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-11-30 22:58:45.367192"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "updated_at" = '2014-11-30 22:58:45.380404' WHERE "users"."id" = 1[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+Completed 302 Found in 114ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered layouts/_leaderboard.html.erb (0.0ms)
+  Rendered welcome/home.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_user_widget.html.erb (0.1ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "updated_at" = '2014-11-30 22:58:45.649396' WHERE "users"."id" = 1
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 270ms (Views: 258.3ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 14:58:45 -0800
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (9.2ms)[0m  [1mCREATE TABLE "game_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "game_pieces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "x" integer, "y" integer, "type" integer, "game_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "leader_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "player_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "wins" integer, "losses" integer, "user_name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "timers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "white_game_timer" integer, "black_game_timer" integer, "timestamp" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (7.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "updated_at" datetime, "playing_game" boolean DEFAULT 'f') [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141105231921')[0m
