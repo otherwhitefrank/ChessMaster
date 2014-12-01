@@ -70,3 +70,1442 @@
   [1m[35m (0.0ms)[0m  rollback transaction
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "player_profiles" ("created_at", "player_id", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-01 22:33:20.505829"], ["player_id", 1], ["updated_at", "2014-12-01 22:33:20.505829"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:33:20.485734"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:33:20.485735"], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "player_id", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-01 22:33:20.578268"], ["player_id", 1], ["updated_at", "2014-12-01 22:33:20.578268"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:33:20.576984"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:33:20.576985"], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "player_id", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-01 22:33:20.584642"], ["player_id", 1], ["updated_at", "2014-12-01 22:33:20.584642"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:33:20.583697"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:33:20.583698"], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "player_id", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-01 22:33:20.590647"], ["player_id", 1], ["updated_at", "2014-12-01 22:33:20.590647"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:33:20.589734"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:33:20.589735"], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "player_id", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-01 22:33:20.597073"], ["player_id", 1], ["updated_at", "2014-12-01 22:33:20.597073"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:33:20.596163"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:33:20.596164"], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "player_id", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-01 22:33:20.603480"], ["player_id", 1], ["updated_at", "2014-12-01 22:33:20.603480"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:33:20.602288"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:33:20.602289"], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (9.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "player_id", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-01 22:33:20.620492"], ["player_id", 1], ["updated_at", "2014-12-01 22:33:20.620492"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:33:20.619203"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:33:20.619205"], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "player_id", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-01 22:33:20.651889"], ["player_id", 1], ["updated_at", "2014-12-01 22:33:20.651889"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:33:20.654011"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:33:20.654011"], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "player_id", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-01 22:33:20.970981"], ["player_id", 1], ["updated_at", "2014-12-01 22:33:20.970981"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:33:20.973091"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:33:20.973091"], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "player_id", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-01 22:33:21.008533"], ["player_id", 1], ["updated_at", "2014-12-01 22:33:21.008533"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:33:21.010768"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:33:21.010768"], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:34:09.511026"], ["updated_at", "2014-12-01 22:34:09.511026"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:34:09.495270"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:34:09.495272"], ["user_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:34:09.584268"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:34:09.592284"], ["updated_at", "2014-12-01 22:34:09.592284"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:34:09.591052"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:34:09.591054"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:34:09.596033"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (3.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:34:09.602460"], ["updated_at", "2014-12-01 22:34:09.602460"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:34:09.601530"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:34:09.601532"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:34:09.605523"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:34:09.609784"], ["updated_at", "2014-12-01 22:34:09.609784"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:34:09.608915"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:34:09.608916"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:34:09.612846"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:34:09.616960"], ["updated_at", "2014-12-01 22:34:09.616960"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:34:09.616007"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:34:09.616008"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:34:09.620991"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:34:09.625017"], ["updated_at", "2014-12-01 22:34:09.625017"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:34:09.624108"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:34:09.624109"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:34:09.628045"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:34:09.632372"], ["updated_at", "2014-12-01 22:34:09.632372"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:34:09.631468"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:34:09.631469"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:34:09.635589"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:34:09.657426"], ["updated_at", "2014-12-01 22:34:09.657426"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:34:09.688647"], ["updated_at", "2014-12-01 22:34:09.688647"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:34:09.698531"], ["updated_at", "2014-12-01 22:34:09.698531"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:38:39.730211"], ["game_id", 0], ["type", 0], ["updated_at", "2014-12-01 22:38:39.730212"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:38:39.758100"], ["game_id", 0], ["type", 0], ["updated_at", "2014-12-01 22:38:39.758101"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:38:39.762407"], ["game_id", 0], ["type", 0], ["updated_at", "2014-12-01 22:38:39.762408"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:38:39.833652"], ["updated_at", "2014-12-01 22:38:39.833652"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:38:39.770186"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:38:39.770187"], ["user_id", 1]]
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:38:39.851382"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:38:39.857334"], ["updated_at", "2014-12-01 22:38:39.857334"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:38:39.856231"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:38:39.856232"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:38:39.860529"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:38:39.865042"], ["updated_at", "2014-12-01 22:38:39.865042"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:38:39.863878"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:38:39.863879"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:38:39.868796"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:38:39.873112"], ["updated_at", "2014-12-01 22:38:39.873112"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:38:39.872009"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:38:39.872010"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:38:39.877278"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:38:39.881400"], ["updated_at", "2014-12-01 22:38:39.881400"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:38:39.880536"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:38:39.880537"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:38:39.884439"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:38:39.888750"], ["updated_at", "2014-12-01 22:38:39.888750"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:38:39.887881"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:38:39.887882"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:38:39.891803"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:38:39.896391"], ["updated_at", "2014-12-01 22:38:39.896391"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:38:39.895355"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:38:39.895356"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:38:39.899664"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:38:39.921582"], ["updated_at", "2014-12-01 22:38:39.921582"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:38:39.954042"], ["updated_at", "2014-12-01 22:38:39.954042"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:38:39.964004"], ["updated_at", "2014-12-01 22:38:39.964004"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:40:00.057895"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:40:00.057896"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:40:00.085624"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:40:00.085625"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:40:00.089790"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:40:00.089791"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:40:00.164062"], ["updated_at", "2014-12-01 22:40:00.164062"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:40:00.098186"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:40:00.098187"], ["user_id", 1]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:40:00.182581"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:40:00.189190"], ["updated_at", "2014-12-01 22:40:00.189190"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:40:00.187888"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:40:00.187889"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:40:00.192817"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:40:00.201162"], ["updated_at", "2014-12-01 22:40:00.201162"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:40:00.200074"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:40:00.200075"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:40:00.204936"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:40:00.208979"], ["updated_at", "2014-12-01 22:40:00.208979"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:40:00.208092"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:40:00.208093"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:40:00.212055"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:40:00.216582"], ["updated_at", "2014-12-01 22:40:00.216582"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:40:00.215708"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:40:00.215709"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:40:00.220412"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:40:00.224946"], ["updated_at", "2014-12-01 22:40:00.224946"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:40:00.223696"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:40:00.223697"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:40:00.228395"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:40:00.233252"], ["updated_at", "2014-12-01 22:40:00.233252"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:40:00.232217"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:40:00.232218"], ["user_id", 1]]
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:40:00.238653"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:40:00.261009"], ["updated_at", "2014-12-01 22:40:00.261009"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:40:00.294236"], ["updated_at", "2014-12-01 22:40:00.294236"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:40:00.304782"], ["updated_at", "2014-12-01 22:40:00.304782"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:42:52.959046"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:42:52.959047"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:42:52.987172"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:42:52.987173"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:42:52.991435"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:42:52.991436"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:42:52.995504"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:42:52.995505"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:42:52.999061"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:42:52.999062"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:42:53.068072"], ["updated_at", "2014-12-01 22:42:53.068072"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:42:53.004527"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:42:53.004528"], ["user_id", 1]]
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:42:53.085892"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:42:53.091798"], ["updated_at", "2014-12-01 22:42:53.091798"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:42:53.090723"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:42:53.090724"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:42:53.095021"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:42:53.103213"], ["updated_at", "2014-12-01 22:42:53.103213"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:42:53.098286"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:42:53.098287"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:42:53.106823"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:42:53.111213"], ["updated_at", "2014-12-01 22:42:53.111213"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:42:53.110299"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:42:53.110301"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:42:53.116440"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:42:53.120638"], ["updated_at", "2014-12-01 22:42:53.120638"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:42:53.119761"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:42:53.119762"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:42:53.123710"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:42:53.127783"], ["updated_at", "2014-12-01 22:42:53.127783"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:42:53.126799"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:42:53.126800"], ["user_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:42:53.131298"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:42:53.135759"], ["updated_at", "2014-12-01 22:42:53.135759"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:42:53.134857"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:42:53.134858"], ["user_id", 1]]
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:42:53.139569"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:42:53.162132"], ["updated_at", "2014-12-01 22:42:53.162132"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:42:53.197821"], ["updated_at", "2014-12-01 22:42:53.197821"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:42:53.207825"], ["updated_at", "2014-12-01 22:42:53.207825"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (3.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:43:47.486526"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:43:47.486527"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:43:47.514437"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:43:47.514438"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:43:47.518626"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:43:47.518628"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:43:47.522232"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:43:47.522233"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:43:47.526011"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:43:47.526012"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:43:47.529462"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:43:47.529462"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:43:47.599585"], ["updated_at", "2014-12-01 22:43:47.599585"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:43:47.534391"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:43:47.534392"], ["user_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:43:47.618515"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:43:47.624254"], ["updated_at", "2014-12-01 22:43:47.624254"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:43:47.623140"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:43:47.623141"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:43:47.627434"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:43:47.631799"], ["updated_at", "2014-12-01 22:43:47.631799"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:43:47.630848"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:43:47.630849"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:43:47.635545"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:43:47.640133"], ["updated_at", "2014-12-01 22:43:47.640133"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:43:47.638700"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:43:47.638701"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:43:47.644148"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:43:47.648246"], ["updated_at", "2014-12-01 22:43:47.648246"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:43:47.647348"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:43:47.647349"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:43:47.651276"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:43:47.655533"], ["updated_at", "2014-12-01 22:43:47.655533"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:43:47.654612"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:43:47.654613"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:43:47.658741"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:43:47.663223"], ["updated_at", "2014-12-01 22:43:47.663223"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:43:47.662161"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:43:47.662162"], ["user_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:43:47.666452"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:43:47.688489"], ["updated_at", "2014-12-01 22:43:47.688489"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:43:47.721429"], ["updated_at", "2014-12-01 22:43:47.721429"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:43:47.731433"], ["updated_at", "2014-12-01 22:43:47.731433"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:45:52.670214"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:45:52.670215"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:45:52.698178"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:45:52.698179"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:45:52.702451"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:45:52.702452"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:45:52.706861"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:45:52.706862"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:45:52.710467"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:45:52.710468"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:45:52.714192"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:45:52.714193"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:45:52.783923"], ["updated_at", "2014-12-01 22:45:52.783923"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:45:52.719423"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:45:52.719424"], ["user_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:45:52.802471"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:45:52.808299"], ["updated_at", "2014-12-01 22:45:52.808299"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:45:52.807176"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:45:52.807177"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:45:52.811479"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:45:52.819675"], ["updated_at", "2014-12-01 22:45:52.819675"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:45:52.818277"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:45:52.818278"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:45:52.824321"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:45:52.828670"], ["updated_at", "2014-12-01 22:45:52.828670"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:45:52.827764"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:45:52.827765"], ["user_id", 1]]
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:45:52.831999"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:45:52.836813"], ["updated_at", "2014-12-01 22:45:52.836813"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:45:52.835905"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:45:52.835906"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:45:52.840417"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:45:52.844374"], ["updated_at", "2014-12-01 22:45:52.844374"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:45:52.843518"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:45:52.843518"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:45:52.847399"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:45:52.852234"], ["updated_at", "2014-12-01 22:45:52.852234"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:45:52.851320"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:45:52.851321"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:45:52.855612"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:45:52.876740"], ["updated_at", "2014-12-01 22:45:52.876740"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:45:52.910345"], ["updated_at", "2014-12-01 22:45:52.910345"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:45:52.920482"], ["updated_at", "2014-12-01 22:45:52.920482"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:46:57.952345"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:46:57.952345"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:46:57.980441"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:46:57.980442"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:46:57.984650"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:46:57.984651"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:46:57.988193"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:46:57.988194"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:46:57.991646"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:46:57.991647"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:46:57.995112"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:46:57.995113"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:46:58.065267"], ["updated_at", "2014-12-01 22:46:58.065267"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:46:58.000025"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:46:58.000026"], ["user_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:46:58.083812"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:46:58.089556"], ["updated_at", "2014-12-01 22:46:58.089556"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:46:58.088478"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:46:58.088479"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:46:58.092709"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (4.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:46:58.100078"], ["updated_at", "2014-12-01 22:46:58.100078"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:46:58.099140"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:46:58.099141"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:46:58.104577"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:46:58.109930"], ["updated_at", "2014-12-01 22:46:58.109930"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:46:58.108954"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:46:58.108956"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:46:58.113588"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:46:58.117965"], ["updated_at", "2014-12-01 22:46:58.117965"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:46:58.117096"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:46:58.117097"], ["user_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:46:58.121971"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:46:58.126286"], ["updated_at", "2014-12-01 22:46:58.126286"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:46:58.125423"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:46:58.125424"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:46:58.129800"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:46:58.134736"], ["updated_at", "2014-12-01 22:46:58.134736"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:46:58.133650"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:46:58.133650"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:46:58.138428"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:46:58.159842"], ["updated_at", "2014-12-01 22:46:58.159842"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:46:58.193882"], ["updated_at", "2014-12-01 22:46:58.193882"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:46:58.204266"], ["updated_at", "2014-12-01 22:46:58.204266"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:47:47.630915"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:47:47.630916"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:47:47.661507"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:47:47.661508"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:47:47.665768"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:47:47.665769"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:47:47.671176"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:47:47.671177"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:47:47.674997"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:47:47.674998"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:47:47.678602"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:47:47.678603"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:47:47.748516"], ["updated_at", "2014-12-01 22:47:47.748516"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:47:47.683691"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:47:47.683692"], ["user_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:47:47.767076"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:47:47.773141"], ["updated_at", "2014-12-01 22:47:47.773141"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:47:47.771956"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:47:47.771958"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:47:47.776353"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:47:47.781460"], ["updated_at", "2014-12-01 22:47:47.781460"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:47:47.780151"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:47:47.780152"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:47:47.784672"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:47:47.788935"], ["updated_at", "2014-12-01 22:47:47.788935"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:47:47.787888"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:47:47.787889"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:47:47.792140"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:47:47.796020"], ["updated_at", "2014-12-01 22:47:47.796020"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:47:47.795158"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:47:47.795160"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:47:47.800061"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:47:47.804512"], ["updated_at", "2014-12-01 22:47:47.804512"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:47:47.803641"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:47:47.803642"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:47:47.807586"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:47:47.812178"], ["updated_at", "2014-12-01 22:47:47.812178"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:47:47.811150"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:47:47.811151"], ["user_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:47:47.815458"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:47:47.836259"], ["updated_at", "2014-12-01 22:47:47.836259"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:47:47.867063"], ["updated_at", "2014-12-01 22:47:47.867063"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:47:47.876225"], ["updated_at", "2014-12-01 22:47:47.876225"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:25.909971"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:25.909972"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:49:25.937802"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:25.937803"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:25.941984"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:25.941985"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:49:25.947508"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:25.947509"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:25.951170"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:25.951171"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:49:25.954813"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:25.954814"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:25.958391"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:25.958392"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:49:26.029154"], ["updated_at", "2014-12-01 22:49:26.029154"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:25.963281"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:25.963282"], ["user_id", 1]]
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:49:26.047464"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:49:26.053328"], ["updated_at", "2014-12-01 22:49:26.053328"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:49:26.052244"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:26.052245"], ["user_id", 1]]
+  [1m[35mSQL (0.3ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:49:26.056959"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:49:26.061674"], ["updated_at", "2014-12-01 22:49:26.061674"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:26.060707"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:26.060708"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:49:26.064796"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:49:26.068895"], ["updated_at", "2014-12-01 22:49:26.068895"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:49:26.068001"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:26.068002"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:49:26.072338"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:49:26.076309"], ["updated_at", "2014-12-01 22:49:26.076309"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:26.075441"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:26.075441"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:49:26.079888"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:49:26.084402"], ["updated_at", "2014-12-01 22:49:26.084402"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:49:26.083513"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:26.083514"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:49:26.087633"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:49:26.092347"], ["updated_at", "2014-12-01 22:49:26.092347"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:26.091257"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:26.091258"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:49:26.095716"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:49:26.116031"], ["updated_at", "2014-12-01 22:49:26.116031"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:49:26.149953"], ["updated_at", "2014-12-01 22:49:26.149953"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:49:26.160379"], ["updated_at", "2014-12-01 22:49:26.160379"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:51.635101"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:51.635102"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (51.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:49:51.714121"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:51.714123"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:51.719157"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:51.719159"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:49:51.723314"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:51.723315"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:51.727114"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:51.727114"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:49:51.730958"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:51.730958"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "game_pieces" ("created_at", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:51.734987"], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-01 22:49:51.734988"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:49:51.803820"], ["updated_at", "2014-12-01 22:49:51.803820"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:51.739960"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:51.739961"], ["user_id", 1]]
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:49:51.822135"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:49:51.828668"], ["updated_at", "2014-12-01 22:49:51.828668"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:49:51.827461"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:51.827462"], ["user_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:49:51.832195"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:49:51.838862"], ["updated_at", "2014-12-01 22:49:51.838862"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:51.836507"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:51.836508"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:49:51.842684"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:49:51.846595"], ["updated_at", "2014-12-01 22:49:51.846595"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:49:51.845666"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:51.845667"], ["user_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:49:51.850020"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:49:51.854928"], ["updated_at", "2014-12-01 22:49:51.854928"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:51.853880"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:51.853881"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:49:51.859558"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:49:51.863512"], ["updated_at", "2014-12-01 22:49:51.863512"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 22:49:51.862638"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:51.862639"], ["user_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1  [["player_id", 1], ["updated_at", "2014-12-01 22:49:51.867265"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-01 22:49:51.871449"], ["updated_at", "2014-12-01 22:49:51.871449"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "players" ("created_at", "game_id", "id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 22:49:51.870603"], ["game_id", 1], ["id", 1], ["updated_at", "2014-12-01 22:49:51.870604"], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "player_profiles" SET "player_id" = ?, "updated_at" = ? WHERE "player_profiles"."id" = 1[0m  [["player_id", 1], ["updated_at", "2014-12-01 22:49:51.877407"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:49:51.898315"], ["updated_at", "2014-12-01 22:49:51.898315"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:49:51.932021"], ["updated_at", "2014-12-01 22:49:51.932021"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 22:49:51.941503"], ["updated_at", "2014-12-01 22:49:51.941503"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'frankhdye@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m

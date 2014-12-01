@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20141105231921) do
   create_table "game_pieces", force: true do |t|
     t.integer  "x"
     t.integer  "y"
-    t.integer  "type"
+    t.string   "type"
     t.integer  "game_id"
     t.datetime "created_at"
     t.datetime "updated_at"
