@@ -3,7 +3,7 @@ class GameBoard < ActiveRecord::Base
   	belongs_to :game
 
   def after_initialize
-    #Create pieces at default position
+    # Create pieces at default position
     pawn1 = Pawn.create()
     pawn1.game_board = self
     pawn1.x = 'C'
