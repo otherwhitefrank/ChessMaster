@@ -15,4 +15,15 @@ class GamePiece < ActiveRecord::Base
 	def self.types
       %w(Pawn Bishop Knight Rook King Queen)
   end
+
+  def move(x, y)
+ 		if self.valid_piece_move?(x, y)
+    		self.x = x
+    		self.y = y
+   	end
+  end
+
+  def valid_piece_move?(x, y)
+  end
+  
 end

@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
   end
 
   def init_player
-    puts "Creatng new Player object"
+    puts "Creating new Player object"
     new_player = Player.create
     new_player.user = self
   end

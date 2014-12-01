@@ -21,11 +21,11 @@ class Player < ActiveRecord::Base
   end
 
   def won_game!
-    @wins = @wins +1
+    @wins = @wins + 1
   end
 
   def lost_game!
-    @losses = @losses +1
+    @losses = @losses + 1
   end
 
 end
