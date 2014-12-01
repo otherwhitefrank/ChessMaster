@@ -57,4 +57,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+gem 'rspec'
+gem "rspec-rails", :group => [:development, :test]
