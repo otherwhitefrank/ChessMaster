@@ -4,7 +4,11 @@ class Pawn < GamePiece
 		if self.x == x
 			if self.y == y - 1
 				true
+			else
+				false
 			end
+		else
+			false
 		end
 	end
 

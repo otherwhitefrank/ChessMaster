@@ -15,7 +15,7 @@ class Player < ActiveRecord::Base
   end
 
   def init_player_profile
-    puts "Creatng new Player Profile object"
+    puts "Creating new Player Profile object"
     new_player_profile = PlayerProfile.create
     new_player_profile.player = self
   end
