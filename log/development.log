@@ -30424,3 +30424,317 @@ SQLite3::BusyException: database is locked: INSERT INTO "player_profiles" ("crea
   [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
   [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
   [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 02:04:14 -0800
+Processing by WelcomeController#home as HTML
+  Rendered layouts/_leaderboard.html.erb (0.7ms)
+  Rendered welcome/home.html.erb within layouts/application (110.9ms)
+  Rendered layouts/_user_widget.html.erb (2.5ms)
+Completed 200 OK in 6016ms (Views: 5833.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 02:04:21 -0800
+Processing by WelcomeController#home as HTML
+  Rendered layouts/_leaderboard.html.erb (0.1ms)
+  Rendered welcome/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_user_widget.html.erb (0.5ms)
+Completed 200 OK in 654ms (Views: 653.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-12-02 02:04:22 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-02 02:04:26 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5026.3ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-02 10:04:26.875677"], ["updated_at", "2014-12-02 10:04:26.875677"]]
+SQLite3::BusyException: database is locked: INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 5476ms
+
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)):
+  app/models/player.rb:19:in `init_player_profile'
+  app/models/player.rb:13:in `block in <class:Player>'
+  app/models/user.rb:19:in `init_player'
+  app/models/user.rb:12:in `block in <class:User>'
+
+
+  Rendered /Users/mrbiggs783/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/mrbiggs783/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/mrbiggs783/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/mrbiggs783/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (397.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-02 02:04:32 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (3.2ms)[0m  begin transaction
+  [1m[36mSQL (4925.0ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-02 10:04:32.654686"], ["updated_at", "2014-12-02 10:04:32.654686"]]
+SQLite3::BusyException: database is locked: INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 4933ms
+
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)):
+  app/models/player.rb:19:in `init_player_profile'
+  app/models/player.rb:13:in `block in <class:Player>'
+  app/models/user.rb:19:in `init_player'
+  app/models/user.rb:12:in `block in <class:User>'
+
+
+  Rendered /Users/mrbiggs783/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/mrbiggs783/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/mrbiggs783/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/mrbiggs783/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (60.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 02:06:22 -0800
+Processing by WelcomeController#home as HTML
+  Rendered layouts/_leaderboard.html.erb (0.5ms)
+  Rendered welcome/home.html.erb within layouts/application (41.2ms)
+  Rendered layouts/_user_widget.html.erb (1.8ms)
+Completed 200 OK in 2184ms (Views: 2131.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-12-02 02:06:25 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-02 02:06:27 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-02 10:06:28.238257"], ["updated_at", "2014-12-02 10:06:28.238257"]]
+  [1m[36m (45.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (50.5ms)
+  Rendered layouts/_user_widget.html.erb (1.0ms)
+Completed 200 OK in 1311ms (Views: 710.9ms | ActiveRecord: 102.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-02 02:06:30 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-02 10:06:31.009411"], ["updated_at", "2014-12-02 10:06:31.009411"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_user_widget.html.erb (0.8ms)
+Completed 200 OK in 694ms (Views: 682.2ms | ActiveRecord: 3.3ms)
