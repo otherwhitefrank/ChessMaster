@@ -1,9 +1,10 @@
 class GamePiece < ActiveRecord::Base
-
-  belongs_to :game_board
-
 	attr_accessor :x
 	attr_accessor :y
+
+  validates :game_board_id, presence: true
+
+  belongs_to :game_board
 
 	scope :pawns, -> { where(type: 'Pawn') } 
 	scope :bishops, -> { where(type: 'Bishop') } 
@@ -12,6 +13,10 @@ class GamePiece < ActiveRecord::Base
 	scope :queens, -> { where(type: 'Queen') } 
 	scope :kings, -> { where(type: 'King') } 
 
+  after_initialize do
+    puts "Piece has been initialized!"
+  end
+    
 	def self.types
       %w(Pawn Bishop Knight Rook King Queen)
   end

@@ -19,15 +19,5 @@ RSpec.describe GamePiece, :type => :model do
     expect(new_game_piece.game_id).to eq(0)
   end
 
-  it "returns true when move is 1 square ahead of current position" do
-    expect(new_game_piece.valid_piece_move?(1, 2)).to eq(true)
-  end
-
-  it "returns false when move is not 1 square ahead of current position" do
-    expect(new_game_piece.valid_piece_move?(1, 4)).to eq(false)
-  end
-
-  it "returns false when move is not strictly vertical" do
-    expect(new_game_piece.valid_piece_move?(2, 2)).to eq(false)
-  end
+  
 end

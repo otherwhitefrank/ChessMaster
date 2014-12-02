@@ -30136,3 +30136,291 @@ Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-12-01 14:29:15 -0800
   [1m[36m (2.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
   [1m[36m (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141105231921')[0m
+  [1m[36m (3.1ms)[0m  [1mCREATE TABLE "game_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "game_pieces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "char_x" varchar(255), "x" integer, "y" integer, "type" varchar(255), "game_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "leader_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "player_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "player_id" integer) 
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "wins" integer, "losses" integer, "user_name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (2.3ms)[0m  CREATE TABLE "timers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "white_game_timer" integer, "black_game_timer" integer, "timestamp" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "updated_at" datetime, "playing_game" boolean DEFAULT 'f') [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.5ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (1.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (2.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141105231921')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "game_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "game_pieces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "char_x" varchar(255), "x" integer, "y" integer, "type" varchar(255), "game_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "leader_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (3.9ms)[0m  CREATE TABLE "player_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "player_id" integer) 
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "wins" integer, "losses" integer, "user_name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (2.1ms)[0m  CREATE TABLE "timers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "white_game_timer" integer, "black_game_timer" integer, "timestamp" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "updated_at" datetime, "playing_game" boolean DEFAULT 'f') [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (2.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (2.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141105231921')[0m
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "game_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "game_pieces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "char_x" varchar(255), "x" integer, "y" integer, "type" varchar(255), "game_id" integer, "game_board_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "leader_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (3.4ms)[0m  CREATE TABLE "player_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "player_id" integer) 
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "wins" integer, "losses" integer, "user_name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (2.1ms)[0m  CREATE TABLE "timers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "white_game_timer" integer, "black_game_timer" integer, "timestamp" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "updated_at" datetime, "playing_game" boolean DEFAULT 'f') [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (2.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (2.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (2.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141105231921')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "game_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "game_pieces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "char_x" varchar(255), "x" integer, "y" integer, "type" varchar(255), "game_id" integer, "game_board_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "leader_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (4.1ms)[0m  CREATE TABLE "player_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "player_id" integer) 
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "wins" integer, "losses" integer, "user_name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "timers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "white_game_timer" integer, "black_game_timer" integer, "timestamp" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "updated_at" datetime, "playing_game" boolean DEFAULT 'f') [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (2.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (2.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (2.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141105231921')[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-01 23:49:35.141151"], ["updated_at", "2014-12-01 23:49:35.141151"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["char_x", "C"], ["created_at", "2014-12-02 00:59:11.984471"], ["game_board_id", 1], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-02 00:59:11.984471"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-02 01:00:06.187425"], ["updated_at", "2014-12-02 01:00:06.187425"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["char_x", "C"], ["created_at", "2014-12-02 01:01:19.759549"], ["game_board_id", 1], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-02 01:01:19.759549"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["char_x", "C"], ["created_at", "2014-12-02 01:02:26.865746"], ["game_board_id", 1], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-02 01:02:26.865746"]]
+SQLite3::BusyException: database is locked: INSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["char_x", "C"], ["created_at", "2014-12-02 01:02:59.476182"], ["game_board_id", 1], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-02 01:02:59.476182"]]
+SQLite3::BusyException: database is locked: INSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["char_x", "C"], ["created_at", "2014-12-02 01:03:20.209175"], ["game_board_id", 1], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-02 01:03:20.209175"]]
+SQLite3::BusyException: database is locked: INSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mBEGIN TRANSACTION; END;[0m
+SQLite3::SQLException: cannot start a transaction within a transaction: BEGIN TRANSACTION; END;
+  [1m[35m (0.3ms)[0m  BEGIN TRANSACTION; END;
+SQLite3::SQLException: cannot start a transaction within a transaction: BEGIN TRANSACTION; END;
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["char_x", "C"], ["created_at", "2014-12-02 01:05:57.357692"], ["game_board_id", 1], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-02 01:05:57.357692"]]
+SQLite3::BusyException: database is locked: INSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["char_x", "C"], ["created_at", "2014-12-02 01:07:26.858925"], ["game_board_id", 1], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-02 01:07:26.858925"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["char_x", "C"], ["created_at", "2014-12-02 01:07:50.132445"], ["game_board_id", 1], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-02 01:07:50.132445"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-02 01:15:40.044890"], ["updated_at", "2014-12-02 01:15:40.044890"]]
+SQLite3::BusyException: database is locked: INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-02 01:16:18.526428"], ["updated_at", "2014-12-02 01:16:18.526428"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.8ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "game_pieces" ("char_x", "created_at", "game_board_id", "game_id", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["char_x", "C"], ["created_at", "2014-12-02 01:16:33.828473"], ["game_board_id", 1], ["game_id", 0], ["type", "Pawn"], ["updated_at", "2014-12-02 01:16:33.828473"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "game_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "game_pieces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "char_x" varchar(255), "x" integer, "y" integer, "type" varchar(255), "game_board_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "leader_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "player_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "player_id" integer) 
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "wins" integer, "losses" integer, "user_name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "timers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "white_game_timer" integer, "black_game_timer" integer, "timestamp" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "updated_at" datetime, "playing_game" boolean DEFAULT 'f') [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (4.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (9.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (2.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141105231921')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36m (307.0ms)[0m  [1mCREATE TABLE "game_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "game_pieces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "char_x" varchar(255), "x" integer, "y" integer, "type" varchar(255), "game_board_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "leader_boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "player_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "player_id" integer) 
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "wins" integer, "losses" integer, "user_name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "timers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "game_id" integer, "white_game_timer" integer, "black_game_timer" integer, "timestamp" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "updated_at" datetime, "playing_game" boolean DEFAULT 'f') [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (1.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (3.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (8.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141105231921')[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-02 01:23:30.943237"], ["updated_at", "2014-12-02 01:23:30.943237"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-02 01:34:01.612395"], ["updated_at", "2014-12-02 01:34:01.612395"]]
+SQLite3::BusyException: database is locked: INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-02 01:34:40.386059"], ["updated_at", "2014-12-02 01:34:40.386059"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-02 01:34:43.112236"], ["updated_at", "2014-12-02 01:34:43.112236"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
