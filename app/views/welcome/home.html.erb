@@ -3,18 +3,17 @@
     <div class="jumbotron">
 
       <div class="container">
-        <center><h1>ChessMaster</h1>
+        <center><h1>ChessMaster</h1></center>
         <br>
 
         <p class="lead">Welcome <%= current_user.username %>! Select a player from the list below and start a match.</p>
       </div>
-      <select name="onlineUsers" size="5">
-      <% @online_users.each do |user| %>
-          <%= @online_now = user['updated_at'] > 10.minutes.ago %>
-          <%= @user_name = user['username'] %>
-          <option value="<%= @user_name%>"><%=@user_name%>, <%=@online_now %></option>
+
+      <%= form_tag("/search", method: "post") do %>
+          <%= label_tag(@online_users, "Select an Active User:") %>
+          <%= hidden_field_tag 'active_user', @current_user_id %>
+          <%= select_tag("selected_user", options_from_collection_for_select(@online_users.collect, "id", "email")) %>
       <% end %>
-      </select>
 
 
       <div class="row">
