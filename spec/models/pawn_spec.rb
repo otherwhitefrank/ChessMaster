@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Pawn, :type => :model do
-  let(:new_pawn) { Pawn.create(x: 1, y: 1, type: 'Pawn', game_id: 0, created_at: Time.now, updated_at: Time.now) }
+  let(:new_pawn) { Pawn.create(x: 1, y: 1, type: 'Pawn', game_board_id: 0, created_at: Time.now, updated_at: Time.now) }
 
   it "returns type as Pawn" do
     expect(new_pawn.type).to eq('Pawn')

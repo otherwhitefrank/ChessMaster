@@ -31390,3 +31390,148 @@ Completed 200 OK in 566ms (Views: 550.9ms | ActiveRecord: 4.4ms)
   [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
   [1m[35m (2.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141105231921')
   [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 02:47:47 -0800
+Processing by WelcomeController#home as HTML
+  Rendered layouts/_leaderboard.html.erb (0.5ms)
+  Rendered welcome/home.html.erb within layouts/application (21.0ms)
+  Rendered layouts/_user_widget.html.erb (1.6ms)
+Completed 200 OK in 990ms (Views: 968.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-12-03 02:47:48 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-12-03 02:47:48 -0800
+
+
+Started GET "/assets/broadcast.css?body=1" for 127.0.0.1 at 2014-12-03 02:47:48 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-12-03 02:47:48 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-03 02:47:48 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-03 02:47:48 -0800
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/player_profiles.css?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/game_boards.css?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/broadcast.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/chess-canvas.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/player_profiles.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/game_boards.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-03 02:47:49 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 02:47:51 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-12-03 10:47:51.419941"], ["updated_at", "2014-12-03 10:47:51.419941"]]
+  [1m[36m (63.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.9ms)
+  Rendered layouts/_user_widget.html.erb (0.9ms)
+Completed 200 OK in 805ms (Views: 601.3ms | ActiveRecord: 67.6ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-03 02:47:53 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "player_profiles" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-12-03 10:47:53.243463"], ["updated_at", "2014-12-03 10:47:53.243463"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_user_widget.html.erb (0.7ms)
+Completed 200 OK in 567ms (Views: 555.7ms | ActiveRecord: 3.8ms)

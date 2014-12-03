@@ -1,24 +1,15 @@
 class King < GamePiece
 
 	def valid_piece_move?(x, y)
-		if self.x = x
+		if (self.x == x)
 			if(self.y == y - 1 || self.y == y + 1)
-				true
+				return true
 			end
-		elsif self.y = y
-			if(self.x == x - 1 || self.x == y + 1)
-				true
-			end
-		elsif self.x = x + 1
-			if(self.y == y - 1 || self.y == y + 1)
-				true
-			end
-		elsif self.x = x - 1
-			if(self.y == y - 1 || self.y == y + 1)
-				true
+		elsif (self.x == x + 1 || self.x == x - 1)
+			if(self.y == y || self.y == y + 1 || self.y == y - 1)
+				return true
 			end
 		end
-		false
+		return false
 	end
-
 end
