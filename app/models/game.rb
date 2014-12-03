@@ -1,11 +1,17 @@
 class Game < ActiveRecord::Base
 
-	validates :game_id, presence: true
+	validates :id, presence: true
 
 	has_one :game_board
+
 	has_one :player_1, :class_name => 'Player'
 	has_one :player_2, :class_name => 'Player'
 	has_one :timer
+
+	after_initialize do
+		game_board = GameBoard.create
+		game_board.game = self
+	end
 
 	def active?
 		true
@@ -20,9 +26,6 @@ class Game < ActiveRecord::Base
   def initiate_game(player_1, player_2, match_time)
     player_1 = player_1
     player_2 = player_2
-
-    GameBoard.create
-
   end
 
 end

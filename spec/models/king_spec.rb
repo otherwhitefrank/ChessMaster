@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe King, :type => :model do
-  let(:new_king) { King.create(x: 3, y: 3, type: 'King', game_id: 0, created_at: Time.now, updated_at: Time.now) }
+  let(:new_king) { King.create(x: 3, y: 3, type: 'King', game_board_id: 0, created_at: Time.now, updated_at: Time.now) }
 
   it "returns type as King" do
     expect(new_king.type).to eq('King')

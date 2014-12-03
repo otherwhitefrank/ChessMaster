@@ -14,7 +14,6 @@ class GamePiece < ActiveRecord::Base
 	scope :kings, -> { where(type: 'King') } 
 
   after_initialize do
-    puts "Piece has been initialized!"
   end
     
 	def self.types
@@ -23,8 +22,8 @@ class GamePiece < ActiveRecord::Base
 
   def move(x, y)
  		if self.valid_piece_move?(x, y)
-    		self.x = x
-    		self.y = y
+    	self.x = x
+    	self.y = y
    	end
   end
 
