@@ -6,7 +6,7 @@
         <center><h1>ChessMaster</h1></center>
         <br>
 
-        <p class="lead">Welcome <%= current_user.email %>! Select one of the options below to get started.</p>
+        <p class="lead">Welcome <%= current_user.username %>! Select one of the options below to get started.</p>
       </div>
 
 
@@ -17,7 +17,7 @@
       <% @users = User.all %>
       <% @users.each do |user| %>
           <%= @online_now = user['updated_at'] > 10.minutes.ago %>
-          <%= @user_name = user['email'] %>
+          <%= @user_name = user['username'] %>
           <option value="<%= @user_name%>"><%=@user_name%>, <%=@online_now %></option>
       <% end %>
       </select>
