@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20141105231921) do
 
   create_table "game_boards", force: true do |t|
+    t.integer  "game_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -24,6 +25,11 @@ ActiveRecord::Schema.define(version: 20141105231921) do
     t.integer  "y"
     t.string   "type"
     t.integer  "game_board_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "games", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
