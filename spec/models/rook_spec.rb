@@ -8,11 +8,11 @@ RSpec.describe Rook, :type => :model do
   end
 
   it "returns true when move is exclusively horizontal" do
-    expect(new_rook.valid_piece_move?(1, 7)).to eq(true)
+    expect(new_rook.valid_piece_move?(7, 1)).to eq(true)
   end
 
   it "returns false when move is exclusively vertical" do
-    expect(new_rook.valid_piece_move?(7, 1)).to eq(true)
+    expect(new_rook.valid_piece_move?(1, 7)).to eq(true)
   end
 
 end
