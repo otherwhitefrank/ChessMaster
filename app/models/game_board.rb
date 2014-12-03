@@ -2,10 +2,48 @@ class GameBoard < ActiveRecord::Base
 	has_many :game_piece
   belongs_to :game
 
+  validates :id, presence: true 
+
   after_initialize do
     # Create pieces at default position
-    pawn1 = GamePiece.new(type: 'Pawn')
+    init_pieces
     puts "Board has been initialized!"
+  end
+
+  def init_pieces
+  	self.game_piece << GamePiece.new(char_x: 'A', x: 1, y: 2, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'B', x: 2, y: 2, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'C', x: 3, y: 2, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'D', x: 4, y: 2, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'E', x: 5, y: 2, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'F', x: 6, y: 2, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'G', x: 7, y: 2, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'H', x: 8, y: 2, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'A', x: 1, y: 1, type: 'Rook')
+  	self.game_piece << GamePiece.new(char_x: 'H', x: 8, y: 1, type: 'Rook')
+  	self.game_piece << GamePiece.new(char_x: 'B', x: 2, y: 1, type: 'Knight')
+  	self.game_piece << GamePiece.new(char_x: 'G', x: 7, y: 1, type: 'Knight')
+  	self.game_piece << GamePiece.new(char_x: 'C', x: 3, y: 1, type: 'Bishop')
+  	self.game_piece << GamePiece.new(char_x: 'F', x: 6, y: 1, type: 'Bishop')
+  	self.game_piece << GamePiece.new(char_x: 'D', x: 4, y: 1, type: 'Queen')
+  	self.game_piece << GamePiece.new(char_x: 'E', x: 5, y: 1, type: 'King')
+
+  	self.game_piece << GamePiece.new(char_x: 'A', x: 1, y: 7, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'B', x: 2, y: 7, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'C', x: 3, y: 7, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'D', x: 4, y: 7, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'E', x: 5, y: 7, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'F', x: 6, y: 7, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'G', x: 7, y: 7, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'H', x: 8, y: 7, type: 'Pawn')
+  	self.game_piece << GamePiece.new(char_x: 'A', x: 1, y: 8, type: 'Rook')
+  	self.game_piece << GamePiece.new(char_x: 'H', x: 8, y: 8, type: 'Rook')
+  	self.game_piece << GamePiece.new(char_x: 'B', x: 2, y: 8, type: 'Knight')
+  	self.game_piece << GamePiece.new(char_x: 'G', x: 7, y: 8, type: 'Knight')
+  	self.game_piece << GamePiece.new(char_x: 'C', x: 3, y: 8, type: 'Bishop')
+  	self.game_piece << GamePiece.new(char_x: 'F', x: 6, y: 8, type: 'Bishop')
+  	self.game_piece << GamePiece.new(char_x: 'D', x: 4, y: 8, type: 'Queen')
+  	self.game_piece << GamePiece.new(char_x: 'E', x: 5, y: 8, type: 'King')
   end
 
   def add_piece
