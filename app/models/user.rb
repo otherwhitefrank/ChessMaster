@@ -6,7 +6,12 @@ class User < ActiveRecord::Base
 
   has_one :player
 
-  attr_accessor :updated_at, :playing_game
+  validates :username,
+  :uniqueness => {
+    :case_sensitive => false
+  }
+
+  attr_accessor :updated_at, :playing_game, :login
 
   after_initialize do
     init_player
@@ -27,6 +32,23 @@ class User < ActiveRecord::Base
 
   def online?
     updated_at > 10.minutes.ago
+  end
+
+  def login=(login)
+    @login = login
+  end
+
+  def login
+    @login || self.username || self.email
+  end
+
+  def self.find_for_database_authentication(warden_conditions)
+    conditions = warden_conditions.dup
+    if login = conditions.delete(:login)
+      where(conditions).where(["lower(username) = :value OR lower(email) = :value", { :value => login.downcase }]).first
+    else
+      where(conditions).first
+    end
   end
 
 end

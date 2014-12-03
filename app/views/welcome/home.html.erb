@@ -3,21 +3,15 @@
     <div class="jumbotron">
 
       <div class="container">
-        <center><h1>ChessMaster</h1></center>
+        <center><h1>ChessMaster</h1>
         <br>
 
-        <p class="lead">Welcome <%= current_user.email %>! Select one of the options below to get started.</p>
+        <p class="lead">Welcome <%= current_user.username %>! Select a player from the list below and start a match.</p>
       </div>
-
-
-
-      <% @current_user_email = current_user.email %>
-
-
       <select name="onlineUsers" size="5">
       <% @online_users.each do |user| %>
           <%= @online_now = user['updated_at'] > 10.minutes.ago %>
-          <%= @user_name = user['email'] %>
+          <%= @user_name = user['username'] %>
           <option value="<%= @user_name%>"><%=@user_name%>, <%=@online_now %></option>
       <% end %>
       </select>
@@ -28,22 +22,9 @@
           <center><p><a class="btn btn-primary" href="welcome/start_game" role="button"><font color="white">Start
             Match &raquo;</font></a></p></center>
         </div>
-        <div class="col-lg-4">
-          <center><p><a class="btn btn-primary" href="welcome/start_game_with_player" role="button"><font color="white">Join
-            Match &raquo;</font></a></p></center>
-        </div>
-        <div class="col-lg-4">
-          <center>
-            <p>
-              <a class="btn btn-primary" href="#" role="button"><span style="color: white; ">Resume Match &raquo;</span></a>
-            </p>
-          </center>
-        </div>
-
-
       </div>
 
-    </div>
+    </div></center>
 
 
 <% else %>
