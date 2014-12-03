@@ -11,11 +11,11 @@
 
 
 
+      <% @current_user_email = current_user.email %>
 
 
       <select name="onlineUsers" size="5">
-      <% @users = User.all %>
-      <% @users.each do |user| %>
+      <% @online_users.each do |user| %>
           <%= @online_now = user['updated_at'] > 10.minutes.ago %>
           <%= @user_name = user['username'] %>
           <option value="<%= @user_name%>"><%=@user_name%>, <%=@online_now %></option>
