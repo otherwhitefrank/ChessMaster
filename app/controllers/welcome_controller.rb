@@ -14,6 +14,7 @@ class WelcomeController < ApplicationController
     @online_users = []
     if (current_user != nil)
       @current_user_email = current_user['email']
+      @current_user_id = current_user['id']
 
       @users.each do |user|
         @online_now = user['updated_at'] > 10.minutes.ago
