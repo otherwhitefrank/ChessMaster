@@ -12,13 +12,15 @@ class WelcomeController < ApplicationController
     #base welcome page
     @users        = User.all
     @online_users = []
-    @current_user_email = current_user['email']
+    if (current_user != nil)
+      @current_user_email = current_user['email']
 
-    @users.each do |user|
-      @online_now = user['updated_at'] > 10.minutes.ago
-      @user_name  = user['email']
-      if (@user_name != @current_user_email)
-        @online_users.push(user)
+      @users.each do |user|
+        @online_now = user['updated_at'] > 10.minutes.ago
+        @user_name  = user['email']
+        if (@user_name != @current_user_email)
+          @online_users.push(user)
+        end
       end
     end
   end
