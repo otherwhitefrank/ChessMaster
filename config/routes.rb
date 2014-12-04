@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   #Welcome screen
   post 'welcome/start_game'
 
+  post 'welcome/join_game'
+
   get 'welcome/home'
 
 

@@ -18,10 +18,11 @@
 <div id="message-area">
 </div>
 
-<script type="text/javascript" charset="utf-8">
+<%= javascript_tag do %>
     var renderStats = new Stats();
     document.body.appendChild(renderStats.domElement);
 
     var updateStats = new Stats();
     document.body.appendChild(updateStats.domElement);
-</script>
+    game_set_players(<%= @player_1.id %> , <%= @player_2.id %>);
+<% end %>

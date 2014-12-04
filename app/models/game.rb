@@ -6,6 +6,7 @@ class Game < ActiveRecord::Base
 
 	has_one :player_1, :class_name => 'Player'
 	has_one :player_2, :class_name => 'Player'
+  has_one :unique_channel_id
 	has_one :timer
 
 	after_initialize do
@@ -23,9 +24,11 @@ class Game < ActiveRecord::Base
 	def whose_turn?
 	end
 
-  def initiate_game(player_1, player_2, match_time)
-    player_1 = player_1
-    player_2 = player_2
+  def initiate_game(player_1, player_2, unique_channel_id, match_time)
+    @player_1 = player_1
+    @player_2 = player_2
+
+    @unique_channel_id = unique_channel_id
   end
 
 end
