@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20141203192721) do
   create_table "games", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "unique_channel_id"
   end
 
   create_table "leader_boards", force: true do |t|
