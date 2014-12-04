@@ -9,11 +9,9 @@ Rails.application.routes.draw do
   resources :game_boards
 
   #Welcome screen
-  get 'welcome/start_game'
+  post 'welcome/start_game'
 
   get 'welcome/home'
-
-  get 'welcome/start_game_with_player'
 
 
 

@@ -14109,7 +14109,7 @@ var Stats=function(){function w(d,K,n){var u,f,c;for(f=0;f<30;f++)for(u=0;u<73;u
 
 
 }).call(this);
-// This is a manifest file that'll be compiled into application.js, which will include all the files
+// This is a manifest file that'll be compiled into application.js.coffee, which will include all the files
 // listed below.
 //
 // Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
