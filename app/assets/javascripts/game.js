@@ -5,6 +5,9 @@
 var Game = {};
 
 Game.fps = 60;
+Game.player1 = {};
+Game.player2 = {};
+Game.game_channel = {};
 
 Game.initialize = function() {
     init_canvas();
@@ -46,10 +49,21 @@ Game.update = function() {
     }
 };
 
+
+function game_set_players(my_player_id, opponent_player_id)
+{
+    self.player1 = my_player_id;
+    self.player2 = opponent_player_id;
+
+};
+
+
 //Take care of turbo_links in rails
 $(document).ready(document_ready);
 
 $(document).on('page:load', document_ready);
+
+
 
 function document_ready() {
     Game.initialize();

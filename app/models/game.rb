@@ -29,6 +29,16 @@ class Game < ActiveRecord::Base
     @player_2 = player_2
 
     @unique_channel_id = unique_channel_id
-  end
+	end
+
+	def get_game_from_channel_id ( channel_id)
+		games = Game.all
+
+		games.each do |curr_game|
+			if (curr_game.unique_channel_id === channel_id)
+				return self
+			end
+		end
+	end
 
 end

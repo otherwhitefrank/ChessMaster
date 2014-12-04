@@ -37,6 +37,8 @@ $(document).ready ->
         data: {
                 message: $("#message").val()
                 event: 'user:said'
+                channel: Game.game_channel
+                id: Game.player1
               }
 
         error: (jqXHR, textStatus, errorThrown) ->
@@ -45,4 +47,5 @@ $(document).ready ->
         success: (data, textStatus, jqXHR) ->
           console.log "Successful AJAX call: #{data}<br>"
       }
+
 
