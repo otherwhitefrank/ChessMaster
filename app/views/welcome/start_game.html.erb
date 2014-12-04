@@ -1,2 +1,27 @@
-<h1>Welcome#start_game</h1>
-<p>Find me in app/views/welcome/start_game.html.erb</p>
+<% content_for :javascript_includes do %>
+    <%= javascript_include_tag "forms.js" %>
+<% end %>
+
+<canvas id="myCanvas" width="675" height="675"
+        style="">
+</canvas>
+
+<form role="form">
+  <div class="form-group">
+    <label for="message">Message</label>
+    <input type="text" class="form-control" id="message"
+           placeholder="Enter message..." />
+  </div>
+</form>
+
+
+<div id="message-area">
+</div>
+
+<script type="text/javascript" charset="utf-8">
+    var renderStats = new Stats();
+    document.body.appendChild(renderStats.domElement);
+
+    var updateStats = new Stats();
+    document.body.appendChild(updateStats.domElement);
+</script>

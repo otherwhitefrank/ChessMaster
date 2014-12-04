@@ -9,19 +9,12 @@
         <p class="lead">Welcome <%= current_user.username %>! Select a player from the list below and start a match.</p>
       </div>
 
-      <%= form_tag("/search", method: "post") do %>
+      <%= form_tag(welcome_start_game_path, method: "post") do %>
           <%= label_tag(@online_users, "Select an Active User:") %>
           <%= hidden_field_tag 'active_user', @current_user_id %>
           <%= select_tag("selected_user", options_from_collection_for_select(@online_users.collect, "id", "email")) %>
+          <%= submit_tag("Start Game!") %>
       <% end %>
-
-
-      <div class="row">
-        <div class="col-lg-4">
-          <center><p><a class="btn btn-primary" href="welcome/start_game" role="button"><font color="white">Start
-            Match &raquo;</font></a></p></center>
-        </div>
-      </div>
 
     </div></center>
 

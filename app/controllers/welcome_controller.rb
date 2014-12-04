@@ -2,10 +2,14 @@ class WelcomeController < ApplicationController
   attr_accessor :player_1, :player_2
 
   def start_game
-    #Start a game with the next active player
-    @player_1 = current_user
+    player_1_id = params[:active_user]
+    player_2_id = params[:selected_user]
 
-    #Find players that are active and not playing
+    @player_1 = User.find(player_1_id)
+    @player_2 = User.find(player_2_id)
+
+    puts @player_1.email
+    puts @player_2.email
   end
 
   def home
@@ -24,17 +28,5 @@ class WelcomeController < ApplicationController
         end
       end
     end
-  end
-
-
-  def start_game_with_player
-    #Start a game with a specific player
-    @player_1 = current_user
-    @player_2 = params[:second_player]
-    #Start game
-  end
-
-  def continue_game
-    #Restart a previously saved game
   end
 end

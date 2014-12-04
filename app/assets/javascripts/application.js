@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
+//= require pusher_channell.js.coffee
 //= require_tree .
 
 
