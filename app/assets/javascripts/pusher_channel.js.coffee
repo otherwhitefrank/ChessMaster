@@ -29,7 +29,7 @@ $(document).ready ->
     if (data.active_player_id.toString() == player_1_id)
       player_1_id = data.active_player_id
       player_2_id = data.opponent_player_id
-      unique_channel_id = data.unique_channel_id
+      unique_channel_id = data.channel_id
       #Command Tell other players browser to join game
       join_game(player_1_id, player_2_id, unique_channel_id)
   )
@@ -91,7 +91,7 @@ unbind_events = (channel_id) ->
 
 
 join_game = (player_1_id, player_2_id, unique_channel_id) ->
-  $('#active_player_id').val(player_1_id)
-  $('#opponent_player_id').val(player_2_id)
+  $('#active_user_id').val(player_1_id.toString())
+  $('#opponent_user_id').val(player_2_id.toString())
   $('#unique_channel_id').val(unique_channel_id)
   $('#join_game_id').submit()
