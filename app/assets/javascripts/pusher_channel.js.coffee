@@ -2,29 +2,43 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-
-#bind_events -> game_room
-#  game_room.bind('user:move', (data) ->
-#    if (data.user == current_user)
-
 $(document).ready ->
-  pusher = new Pusher('bca91b4571f77551a885')
-  wait_room = pusher.subscribe 'wait_room'
+  root.pusher = new Pusher('bca91b4571f77551a885')
+  root.wait_room = pusher.subscribe 'wait_room'
 
-  game_room = {}
+  player_1_id = undefined
+  player_2_id = undefined
+  unique_channel_id = undefined
 
-  wait_room.bind('user:said', (data) ->
-    $('#message-area').append "Successful AJAX call: #{data.from} sent: #{data.message}<br>"
-  )
+  root.game_room = {}
+
+  if ($('#player_1_id').length != 0)
+    player_1_id = $('#player_1_id').html()
+
+  if ($('#player_2_id').length != 0)
+    player_2_id = $('#player_2_id').html()
+
+  if ($('#unique_channel_id').length != 0)
+    unique_channel_id = $('#unique_channel_id').html()
+
+  if (player_2_id != undefined)
+    #Client is at start_game/join_game, join match channel
+    bind_events(unique_channel_id)
 
   wait_room.bind('server:join_channel', (data) ->
-    game_room = pusher.subscribe data.game_room_id
-    #bind_events(game_room)
+    if (data.active_player_id.toString() == player_1_id)
+      player_1_id = data.active_player_id
+      player_2_id = data.opponent_player_id
+      unique_channel_id = data.unique_channel_id
+      #Command Tell other players browser to join game
+      join_game(player_1_id, player_2_id, unique_channel_id)
   )
 
   wait_room.bind('server:leave_channel', (data) ->
-    game_room = pusher.unsubscribe data.game_room_id
-    #unbind_events(game_room)
+    unbind_events(data.channel_id)
+    #Goto root
+    window.location.href = "/"
+
   )
 
   $('#message').keypress (e) ->
@@ -37,12 +51,47 @@ $(document).ready ->
         data: {
                 message: $("#message").val()
                 event: 'user:said'
+                channel: unique_channel_id
+                id: player_1_id
               }
 
         error: (jqXHR, textStatus, errorThrown) ->
-          console.log "AJAX Error: #{textStatus}<br>"
+          console.log textStatus
 
         success: (data, textStatus, jqXHR) ->
-          console.log "Successful AJAX call: #{data}<br>"
+          console.log data
       }
 
+
+root = exports ? this
+
+root.send_message = (message) ->
+  $.ajax '/broadcast/broadcast', {
+    type: 'POST'
+
+    data: message
+
+    error: (jqXHR, textStatus, errorThrown) ->
+      console.log "AJAX Error: #{textStatus}<br>"
+
+    success: (data, textStatus, jqXHR) ->
+      console.log "Successful AJAX call: #{data}<br>"
+  }
+
+bind_events = (channel_id) ->
+  window.game_room = window.pusher.subscribe channel_id
+
+  window.game_room.bind('server:said', (data) ->
+    $('#message-area').append "#{data.message}<br>"
+  )
+
+
+unbind_events = (channel_id) ->
+  window.game_room = window.pusher.unsubscribe data.channel_id
+
+
+join_game = (player_1_id, player_2_id, unique_channel_id) ->
+  $('#active_player_id').val(player_1_id)
+  $('#opponent_player_id').val(player_2_id)
+  $('#unique_channel_id').val(unique_channel_id)
+  $('#join_game_id').submit()

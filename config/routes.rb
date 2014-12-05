@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
-  post 'broadcast/broadcast'
-
-  post 'broadcast/message'
 
   devise_for :users
   resources :player_profiles
 
   resources :game_boards
+
+  post 'broadcast/broadcast'
 
   #Welcome screen
   post 'welcome/start_game'
@@ -14,8 +13,6 @@ Rails.application.routes.draw do
   post 'welcome/join_game'
 
   get 'welcome/home'
-
-
 
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -12,26 +12,32 @@ class WelcomeController < ApplicationController
 
     #Build a custom channel name out of emails
     channel_name = @player_1.email + @player_2.email
-    unique_channel_id =  Digest::SHA1.hexdigest (channel_name)
+    @unique_channel_id =  Digest::SHA1.hexdigest (channel_name)
 
-    puts unique_channel_id
+    puts @unique_channel_id
 
     puts @player_1.email
     puts @player_2.email
 
-    @current_game = Game.create
-    @current_game.initiate_game(@player_1.player, @player_2.player, unique_channel_id, 500)
+    @current_game = Game.new
+    @current_game.initiate_game(@player_1.player, @player_2.player, @unique_channel_id, 500)
+    @current_game.save
 
-    bind_channel_events(unique_channel_id)
+    bind_channel_events(@unique_channel_id)
 
-    Pusher['wait_room'].trigger('user:join_channel', {
-        message: "Join Room #{@player_2.id} #{unique_channel_id}"
+    Pusher['wait_room'].trigger('server:join_channel', {
+        message: "Join Room #{@player_2.id} #{@unique_channel_id}",
+        channel_id: @unique_channel_id,
+        active_player_id: @player_2.id,
+        opponent_player_id: @player_1.id
     })
   end
 
   def join_game
 
-
+    @player_1_id = params[:active_user_id]
+    @player_2_id = params[:opponent_user_id]
+    @unique_channel_id = params[:unique_channel_id]
   end
 
   def home

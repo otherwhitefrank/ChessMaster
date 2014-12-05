@@ -6,7 +6,7 @@ class GameBoard < ActiveRecord::Base
 
   after_initialize do
     # Create pieces at default position
-    init_pieces
+    #init_pieces
     puts "Board has been initialized!"
   end
 

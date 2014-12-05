@@ -14,6 +14,14 @@ Game.initialize = function() {
     //add_event_listener_keyboard(event_listener_keyboard);
     init_board();
     init_pieces();
+
+    //Add stats to DOM
+    Game.renderStats = new Stats();
+    document.body.appendChild(Game.renderStats.domElement);
+
+    Game.updateStats = new Stats();
+    document.body.appendChild(Game.updateStats.domElement);
+
     draw_board();
 };
 
@@ -46,6 +54,7 @@ Game.update = function() {
     }
 };
 
+
 //Take care of turbo_links in rails
 $(document).ready(document_ready);
 
@@ -63,13 +72,13 @@ function document_ready() {
             loops = 0;
 
             while ((new Date).getTime() > nextGameTick) {
-                updateStats.update();
+                Game.updateStats.update();
                 Game.update();
                 nextGameTick += skipTicks;
                 loops++;
             }
 
-            renderStats.update();
+            Game.renderStats.update();
             Game.draw();
         };
     })();
