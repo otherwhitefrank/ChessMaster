@@ -8,7 +8,7 @@ class BroadcastController < ApplicationController
     message = params[:message]
     user_id = params[:id]
 
-    route_broadcast(id, channel_id, event, message)
+    route_broadcast(user_id, channel_id, event, message)
 
     puts "Channel: #{channel_id} Event: #{event} Message: #{message}"
     render nothing: true
@@ -22,6 +22,7 @@ class BroadcastController < ApplicationController
   def get_board_from_channel_id(channel_id)
     return Game.get_game_from_channel_id(channel_id)
   end
+
 
   def route_broadcast(user_id, channel_id, event, message)
     case event

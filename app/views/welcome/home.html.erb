@@ -31,6 +31,14 @@
     <br>
 <% end %>
 
+<div id="player_1_id" style="display: none;"><%= @current_user_id %></div>
+
+<%= form_tag(welcome_join_game_path, method: "post", id: "join_game_id") do %>
+    <%= hidden_field_tag 'active_user_id', @current_user_id %>
+    <%= hidden_field_tag 'opponent_user_id', @current_user_id %>
+    <%= hidden_field_tag 'unique_channel_id', @current_user_id %>
+<% end %>
+
 <center><br>
   <%= render 'layouts/leaderboard' %>
 </center>

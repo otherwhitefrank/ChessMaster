@@ -86,11 +86,11 @@ Piece.prototype.lerp = function(v0, v1, t) {
 
 
 function init_canvas() {
-    elem = document.getElementById('myCanvas'),
-        elemLeft = elem.offsetLeft,
-        elemTop = elem.offsetTop,
-        context = elem.getContext('2d'),
-        elements = [];
+    elem = document.getElementById('myCanvas');
+    elemLeft = elem.offsetLeft;
+    elemTop = elem.offsetTop;
+    context = elem.getContext('2d');
+    elements = [];
 }
 
 //add_event_listener_keyboard(event_listener_keyboard);
@@ -123,14 +123,36 @@ function event_listener_mousedown(piece, event) {
 
 }
 
+function ask_to_move (piece, attempted_x, attempted_y)
+{
+
+
+
+}
+
+function ok_to_move( piece, x, y)
+{
+
+}
+
+function bad_move (x, y)
+{
+
+}
+
 function event_listener_mouseup(piece, event) {
     WATCHING_CLICK_EVENT = false;
 
     var x = event.pageX - elemLeft,
         y = event.pageY - elemTop;
 
-    selected_piece.moveX = Math.floor((x) / 75) * 75 ;
-    selected_piece.moveY = Math.floor((y) / 75) * 75 ;
+    var attempted_x = Math.floor((x) / 75) * 75 ;
+    var attempted_y = Math.floor((y) / 75) * 75 ;
+
+    //Ask server to move piece
+    ask_to_move(piece, attempted_x, attempted_y)
+
+
 
 }
 
@@ -468,10 +490,12 @@ function init_pieces() {
     pieces.push(blackPawn8);
 
 
+    /*
     // Render pieces.
     pieces.forEach(function (piece) {
         drawPiece(piece);
     })
+    */
 
 }
 
