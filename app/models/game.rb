@@ -103,7 +103,6 @@ class Game < ActiveRecord::Base
 	def valid_move?(player_id, str_x1, str_y1, str_x2, str_y2)
 		#Is it the players turn?
 		if (players_turn?(player_id))
-			move(str_x1, str_y1, str_x2, str_y2)
 			switch_player_turn()
 			return true
 		else
