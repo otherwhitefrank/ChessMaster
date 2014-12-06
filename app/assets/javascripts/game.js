@@ -45,6 +45,8 @@ Game.draw = function() {
     for (var i=0; i < pieces.length; i++) {
         drawPiece(pieces[i]);
     }
+
+
 };
 
 Game.update = function() {
@@ -79,7 +81,7 @@ function document_ready() {
             }
 
             Game.renderStats.update();
-            Game.draw();
+            requestAnimationFrame(Game.draw);
         };
     })();
 

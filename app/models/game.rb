@@ -99,10 +99,10 @@ class Game < ActiveRecord::Base
 		#Is it the players turn?
 		if (players_turn?(player_id))
 			#Players turn so check if the piece can move there
-
+			switch_player_turn()
 			return true
-
 		else
+			#not players turn
 			return false
 		end
 	end
