@@ -1,10 +1,15 @@
 class GamePiece < ActiveRecord::Base
+
+	#self.primary_key = :id
+	#validates :id, presence: true
+	#self.foreign_key = :game_id
+  #validates :game, presence: true
+
+  belongs_to :game, :class_name => 'Game'
+
 	attr_accessor :x
 	attr_accessor :y
-
-  validates :game_board_id, presence: true
-
-  belongs_to :game_board
+	attr_accessor :type
 
 	scope :pawns, -> { where(type: 'Pawn') } 
 	scope :bishops, -> { where(type: 'Bishop') } 

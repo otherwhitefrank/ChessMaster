@@ -34,7 +34,6 @@ class WelcomeController < ApplicationController
   end
 
   def join_game
-
     @player_1_id = params[:active_user_id]
     @player_2_id = params[:opponent_user_id]
     @unique_channel_id = params[:unique_channel_id]
