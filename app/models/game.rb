@@ -82,7 +82,7 @@ class Game < ActiveRecord::Base
 	end
 
 	def find_piece(x, y)
-		self.game_piece.find_by x: x, y: y
+		GamePiece.find_by(x: convert_x(x).to_s , y: convert_y(y).to_s, game_id: self.id)
 	end
 
 	def move(str_x1, str_y1, str_x2, str_y2)
@@ -104,6 +104,7 @@ class Game < ActiveRecord::Base
 		#Is it the players turn?
 		if (players_turn?(player_id))
 			switch_player_turn()
+			move(str_x1, str_y1, str_x2, str_y2)
 			return true
 		else
 			#not players turn

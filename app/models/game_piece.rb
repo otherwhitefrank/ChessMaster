@@ -31,6 +31,7 @@ class GamePiece < ActiveRecord::Base
   end
 
   def valid_piece_move?(x, y)
+		true
   end
   
  	def convert_x(str_x)
