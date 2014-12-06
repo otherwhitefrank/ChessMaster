@@ -23,14 +23,22 @@ class GamePiece < ActiveRecord::Base
       %w(Pawn Bishop Knight Rook King Queen)
   end
 
-  def move(x, y)
- 		if self.valid_piece_move?(x, y)
-    	self.x = x
-    	self.y = y
+  def move(new_x, new_y)
+ 		if self.valid_piece_move?(new_x, new_y)
+      self.update_attributes x: (new_x + 96).chr.to_s
+      self.update_attributes y: new_y.to_s
    	end
   end
 
   def valid_piece_move?(x, y)
   end
   
+ 	def convert_x(str_x)
+		str_x.ord.to_i - 96
+	end
+
+	def convert_y(str_y)
+		str_y.to_i
+	end
+
 end

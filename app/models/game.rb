@@ -37,54 +37,59 @@ class Game < ActiveRecord::Base
 	end
 
 	def init_pieces
-		self.game_piece << GamePiece.new(x: 1, y: 2, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 2, y: 2, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 3, y: 2, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 4, y: 2, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 5, y: 2, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 6, y: 2, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 7, y: 2, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 8, y: 2, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 1, y: 1, type: 'Rook', game_id: self)
-		self.game_piece << GamePiece.new(x: 8, y: 1, type: 'Rook', game_id: self)
-		self.game_piece << GamePiece.new(x: 2, y: 1, type: 'Knight', game_id: self)
-		self.game_piece << GamePiece.new(x: 7, y: 1, type: 'Knight', game_id: self)
-		self.game_piece << GamePiece.new(x: 3, y: 1, type: 'Bishop', game_id: self)
-		self.game_piece << GamePiece.new(x: 6, y: 1, type: 'Bishop', game_id: self)
-		self.game_piece << GamePiece.new(x: 4, y: 1, type: 'Queen', game_id: self)
-		self.game_piece << GamePiece.new(x: 5, y: 1, type: 'King', game_id: self)
+		self.game_piece << GamePiece.new(x: 1, y: 2, type: 'Pawn', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 2, y: 2, type: 'Pawn', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 3, y: 2, type: 'Pawn', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 4, y: 2, type: 'Pawn', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 5, y: 2, type: 'Pawn', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 6, y: 2, type: 'Pawn', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 7, y: 2, type: 'Pawn', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 8, y: 2, type: 'Pawn', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 1, y: 1, type: 'Rook', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 8, y: 1, type: 'Rook', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 2, y: 1, type: 'Knight', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 7, y: 1, type: 'Knight', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 3, y: 1, type: 'Bishop', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 6, y: 1, type: 'Bishop', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 4, y: 1, type: 'Queen', color: 'black', game_id: self)
+		self.game_piece << GamePiece.new(x: 5, y: 1, type: 'King', color: 'black', game_id: self)
 
-		self.game_piece << GamePiece.new(x: 1, y: 7, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 2, y: 7, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 3, y: 7, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 4, y: 7, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 5, y: 7, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 6, y: 7, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 7, y: 7, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 8, y: 7, type: 'Pawn', game_id: self)
-		self.game_piece << GamePiece.new(x: 1, y: 8, type: 'Rook', game_id: self)
-		self.game_piece << GamePiece.new(x: 8, y: 8, type: 'Rook', game_id: self)
-		self.game_piece << GamePiece.new(x: 2, y: 8, type: 'Knight', game_id: self)
-		self.game_piece << GamePiece.new(x: 7, y: 8, type: 'Knight', game_id: self)
-		self.game_piece << GamePiece.new(x: 3, y: 8, type: 'Bishop', game_id: self)
-		self.game_piece << GamePiece.new(x: 6, y: 8, type: 'Bishop', game_id: self)
-		self.game_piece << GamePiece.new(x: 4, y: 8, type: 'Queen', game_id: self)
-		self.game_piece << GamePiece.new(x: 5, y: 8, type: 'King', game_id: self)
+		self.game_piece << GamePiece.new(x: 1, y: 7, type: 'Pawn', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 2, y: 7, type: 'Pawn', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 3, y: 7, type: 'Pawn', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 4, y: 7, type: 'Pawn', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 5, y: 7, type: 'Pawn', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 6, y: 7, type: 'Pawn', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 7, y: 7, type: 'Pawn', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 8, y: 7, type: 'Pawn', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 1, y: 8, type: 'Rook', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 8, y: 8, type: 'Rook', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 2, y: 8, type: 'Knight', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 7, y: 8, type: 'Knight', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 3, y: 8, type: 'Bishop', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 6, y: 8, type: 'Bishop', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 4, y: 8, type: 'Queen', color: 'white', game_id: self)
+		self.game_piece << GamePiece.new(x: 5, y: 8, type: 'King', color: 'white', game_id: self)
 	end
 
 
-	def convert_to_ascii(char_x)
-		char_x.ord - 64
+	def convert_x(str_x)
+		str_x.ord.to_i - 96
 	end
 
-	def find_piece(char_x, y)
-		GamePiece.find_by_char_x_and_y(char_x, y).type
+	def convert_y(str_y)
+		str_y.to_i
 	end
 
-	def move(x1, y1, x2, y2)
-		if valid_move?(x1, y1, x2, y2)
-			find_piece(x1, y1).move(x2, y2)
-		end
+	def find_piece(x, y)
+		self.game_piece.find_by x: x, y: y
+	end
+
+	def move(str_x1, str_y1, str_x2, str_y2)
+			piece = find_piece(str_x1, str_y1)
+			x2 = convert_x(str_x2)
+			y2 = convert_y(str_y2)
+			piece.move(x2, y2)
 	end
 
 	def switch_player_turn
@@ -95,10 +100,10 @@ class Game < ActiveRecord::Base
 		end
 	end
 
-	def valid_move?(player_id, x1, y1, x2, y2)
+	def valid_move?(player_id, str_x1, str_y1, str_x2, str_y2)
 		#Is it the players turn?
 		if (players_turn?(player_id))
-			#Players turn so check if the piece can move there
+			move(str_x1, str_y1, str_x2, str_y2)
 			switch_player_turn()
 			return true
 		else
@@ -128,28 +133,69 @@ class Game < ActiveRecord::Base
 		end
 	end
 
+		def check?
+		x = (self.game_piece.find_by type: 'King').x
+		y = (self.game_piece.find_by type: 'King').y
+		(1..8) .each do |i|
+			(1..8) .each do |j|
+				if find_piece(i, j) != nil
+					if valid_move?(i, j, x, y)
+						if find_piece(i, j).color != find_piece(x, y).color
+							true
+						end
+					end
+				end
+			end
+		end
+		false
+	end
+
 	def checkmate?
+		if check?
+			x = (self.game_piece.find_by type: 'King').x
+			y = (self.game_piece.find_by type: 'King').y
+			(1..8) .each do |i|
+				(1..8) .each do |j|
+					if find_piece(i, j) != nil
+						if valid_move?(i, j, x, y)
+							if find_piece(i, j).color != find_piece(x, y)
+								true
+							end
+						end
+					end
+				end
+			end
+		end
 	end
 
 	def promote_pawn
 	end
 
-	def clear_path?
+	def clear_path?(x1, y1, x2, y2)
+		if find_piece(x1, y1).type == 'Rook'
+			clear_path_rook?(x1, y1, x2, y2)
+		end
 	end
 
-	def capture_piece
+	def capture_piece(x1, y1, x2, y2)
+		if open_square?(x2, y2) == false
+			if (find_piece(x1, y1).color != find_piece(x2, y2).color)
+				self.game_piece.delete(find_piece(x2, y2))
+			end
+		end
 	end
 
 	def open_square?(x, y)
 		if find_piece(x, y) == nil
 			true
+		else
+			false
 		end
-		false
 	end
 
 	def within_board?(x, y)
-		if 0 <= x < 8
-			if 0 <= y < 8
+		if 0 < x && x <= 8
+			if 0 < y && y <= 8
 				true
 			else
 				false
@@ -157,6 +203,40 @@ class Game < ActiveRecord::Base
 		else
 			false
 		end
+	end
+
+	def clear_path_rook?(x1, y1, x2, y2)
+		if x1 == x2
+			if y2 > y1
+				((y1 + 1)..y2) .each do |i|
+					if open_square?(x1, i) == false
+						return false
+					end
+				end
+			elsif y1 > y2
+				(y2..(y1 - 1)) .each do |i|
+					if open_square?(x1, i) == false
+						return false
+					end
+				end
+			end
+		elsif y1 == y2
+			if x2 > x1
+				((x1 + 1)..x2) .each do |i|
+					if open_square?(i, y1) == false
+						return false
+					end
+				end
+			elsif x1 > x2
+				(x2..(x1 - 1)) .each do |i|
+					if open_square?(i, y1) == false
+						return false
+					end
+				end
+			end
+			return true
+		end
+		
 	end
 
 end

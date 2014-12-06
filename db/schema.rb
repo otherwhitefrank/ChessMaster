@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20141203192721) do
     t.string   "x"
     t.string   "y"
     t.string   "type"
+    t.string   "color"
     t.integer  "game_id"
     t.datetime "created_at"
     t.datetime "updated_at"

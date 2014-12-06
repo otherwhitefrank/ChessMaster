@@ -47,9 +47,6 @@ class BroadcastController < ApplicationController
         #Parse message for grid coordinates
         if (curr_game.valid_move?(user_id, old_x, old_y, attempted_x, attempted_y))
 
-          #Change from white/black or vice versus
-          curr_game.switch_player_turn
-
           #Move is okay, do the move
           send_data = {user_id: user_id,
                        opponent_id: opponent_id,
