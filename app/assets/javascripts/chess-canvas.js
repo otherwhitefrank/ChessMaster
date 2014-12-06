@@ -193,6 +193,31 @@ window.bad_move = function(data)
 
 }
 
+window.delete_piece = function(data)
+{
+    //First get the piece associated with grid coordinates
+    var attempted_x = data.attempted_x;
+    var attempted_y = data.attempted_y;
+
+    var old_coord = getCoordFromGrid(attempted_x, attempted_y );
+
+    var piece = get_piece_at_coord(old_coord.x, old_coord.y)
+
+    //Tell the piece it is okay to move to that position
+
+    remove_piece(piece)
+}
+
+function remove_piece(piece)
+{
+    var index = pieces.indexOf(piece)
+    if (index != -1)
+    {
+        pieces.splice(index, 1); //Remove the piece from the pieces array
+        delete piece;
+    }
+}
+
 function get_piece_at_coord(x, y)
 {
     var found_piece = null;

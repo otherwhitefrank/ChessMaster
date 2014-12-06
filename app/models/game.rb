@@ -98,8 +98,11 @@ class Game < ActiveRecord::Base
 	def valid_move?(player_id, x1, y1, x2, y2)
 		#Is it the players turn?
 		if (players_turn?(player_id))
+			#is the move okau?
+			#is someone inbetween
 			#Players turn so check if the piece can move there
 			switch_player_turn()
+
 			return true
 		else
 			#not players turn

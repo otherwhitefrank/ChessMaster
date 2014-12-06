@@ -101,6 +101,10 @@ bind_events = (channel_id) ->
     window.bad_move(data)
   )
 
+  window.game_room.bind('server:delete_piece', (data) ->
+    window.delete_piece(data)
+  )
+
 
 unbind_events = (channel_id) ->
   window.game_room = window.pusher.unsubscribe data.channel_id
