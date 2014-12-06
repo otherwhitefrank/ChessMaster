@@ -43,25 +43,21 @@ var Piece = function (x, y, img_url) {
     this.clickDiffY = 0;
 
     //Original X, this is needed to send the piece back to its old position if the move is denied
-    this.oldX = 0;
-    this.oldY = 0;
+    this.oldX = x;
+    this.oldY = y;
 
     //Open our image
     this.img =  new Image;
     this.img.src = img_url;
 };
 
-Piece.prototype.validMove = function(x, y) {
-    this.moveX = x;
-    this.moveY = y;
-};
 
 Piece.prototype.clickWithinPiece = function(x, y) {
-    return (y > this.y && y < this.y + this.height && x > this.x && x < this.x + this.width);
+    return (y >= this.y && y < this.y + this.height && x >= this.x && x < this.x + this.width);
 };
 
 Piece.prototype.oldClickWithinPiece = function(x, y) {
-    return (y > this.oldY && y < this.oldY + this.height && x > this.oldX && x < this.oldX + this.width);
+    return (y >= this.oldY && y < this.oldY + this.height && x >= this.oldX && x < this.oldX + this.width);
 };
 
 Piece.prototype.update = function() {
@@ -159,16 +155,17 @@ window.ok_to_move = function(data)
     var attempted_x = data.attempted_x;
     var attempted_y = data.attempted_y;
 
-    var old_coord = getGridFromCoord(old_x, old_y );
-    var attempted_coord = getGridFromCoord(attempted_x, attempted_y );
+    var old_coord = getCoordFromGrid(old_x, old_y );
+    var attempted_coord = getCoordFromGrid(attempted_x, attempted_y );
 
     var piece = get_piece_at_coord(old_coord.x, old_coord.y)
 
     //Tell the piece it is okay to move to that position
-    piece.x = attempted_coord.x;
-    piece.y = attempted_coord.y;
+
     piece.old_x = attempted_coord.x;
     piece.old_y = attempted_coord.y;
+    piece.moveX = attempted_coord.x;
+    piece.moveY = attempted_coord.y;
 
 
 }
@@ -182,16 +179,17 @@ window.bad_move = function(data)
     var attempted_x = data.attempted_x;
     var attempted_y = data.attempted_y;
 
-    var old_coord = getGridFromCoord(old_x, old_y );
-    var attempted_coord = getGridFromCoord(attempted_x, attempted_y );
+    var old_coord = getCoordFromGrid(old_x, old_y );
+    var attempted_coord = getCoordFromGrid(attempted_x, attempted_y );
 
     var piece = get_piece_at_coord(old_coord.x, old_coord.y)
 
     //Tell the piece it is okay to move to that position
-    piece.x = old_coord.x;
-    piece.y = old_coord.y;
-    piece.old_x = attempted_coord.x;
-    piece.old_y = attempted_coord.y;
+
+    piece.old_x = old_coord.x;
+    piece.old_y = old_coord.y;
+    piece.moveX = old_coord.x;
+    piece.moveY = old_coord.y;
 
 }
 
@@ -449,7 +447,7 @@ function getCoordFromGrid(letter, num ) {
 function getGridFromCoord(x, y ) {
 
     var x_grid = x - MARGIN_X;
-    var y_grid = y - MARGIN_Y;
+    var y_grid = y;
 
     x_grid = Math.ceil(x_grid / MARGIN_X);
     y_grid = Math.ceil(y_grid / MARGIN_Y);

@@ -16,14 +16,14 @@ class WelcomeController < ApplicationController
 
     puts @unique_channel_id
 
-    puts @player_1.email
-    puts @player_2.email
+    puts @player_1
+    puts @player_2
 
     @current_game = Game.new
-    @current_game.initiate_game(@player_1.player, @player_2.player, @unique_channel_id, 500)
-    @current_game.save
-
-    bind_channel_events(@unique_channel_id)
+    @current_game.initiate_game(@player_1, @player_2, @unique_channel_id, 500)
+    @current_game.save!
+    @current_game.init_pieces
+    @current_game.save!
 
     Pusher['wait_room'].trigger('server:join_channel', {
         message: "Join Room #{@player_2.id} #{@unique_channel_id}",
@@ -57,13 +57,4 @@ class WelcomeController < ApplicationController
     end
   end
 
-  def bind_channel_events(unique_channel_id)
-    Pusher[unique_channel_id].trigger('user:move', {
-        message: 'hello world'
-    })
-
-    Pusher[unique_channel_id].trigger('user:ok', {
-        message: 'hello world'
-    })
-  end
 end

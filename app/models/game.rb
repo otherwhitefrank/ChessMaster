@@ -27,12 +27,13 @@ class Game < ActiveRecord::Base
 	end
 
   def initiate_game(player_1, player_2, unique_channel_id, match_time)
-    @player_1 = player_1
-    @player_2 = player_2
+    self.player_1 = player_1
+		self.player_2 = player_2
+		self.current_turn = "white"
 
-    @unique_channel_id = unique_channel_id
-		@white_time = match_time
-		@black_time = match_time
+    self.unique_channel_id = unique_channel_id
+		self.white_timer = match_time
+		self.black_timer = match_time
 	end
 
 	def init_pieces
@@ -87,10 +88,7 @@ class Game < ActiveRecord::Base
 	end
 
 	def valid_move?(x1, y1, x2, y2)
-		if condition
-			true
-		end
-		false
+		return true
 	end
 
 	def check?

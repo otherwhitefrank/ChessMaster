@@ -21,7 +21,7 @@ class BroadcastController < ApplicationController
   end
 
   def get_board_from_channel_id(channel_id)
-    Game.find_by_unique_channel_id(channel_id)
+    Game.find_by(unique_channel_id: channel_id)
   end
 
 
@@ -38,10 +38,9 @@ class BroadcastController < ApplicationController
         attempted_y = message['attempted_y']
 
         curr_game = get_board_from_channel_id(channel_id)
-        curr_game_board = curr_game.game_board
 
         #Parse message for grid coordinates
-        if (curr_game_board.valid_move?(curr_x, curr_y, attempted_x, attempted_y))
+        if (curr_game.valid_move?(old_x, old_y, attempted_x, attempted_y))
           #Move is okay, do the move
           Pusher[channel_id].trigger('server:move_ok', {user_id: user_id,
                                                         opponent_id: opponent_id,
@@ -64,6 +63,13 @@ class BroadcastController < ApplicationController
                                                             old_y: old_y,
                                                             attempted_x: attempted_x,
                                                             attempted_y: attempted_y})
+          #Tell the other player to issue the same command switching user_id's
+          Pusher[channel_id].trigger('server:move_not_ok', {user_id: opponent_id,
+                                                        opponent_id: user_id,
+                                                        old_x: old_x,
+                                                        old_y: old_y,
+                                                        attempted_x: attempted_x,
+                                                        attempted_y: attempted_y})
         end
     end
   end
