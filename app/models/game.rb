@@ -97,8 +97,10 @@ class Game < ActiveRecord::Base
 
 	def valid_move?(player_id, x1, y1, x2, y2)
 		#Is it the players turn?
-		if (players_turn?)
+		if (players_turn?(player_id))
 			#Players turn so check if the piece can move there
+
+			return true
 
 		else
 			return false
@@ -109,14 +111,14 @@ class Game < ActiveRecord::Base
 	end
 
 	def players_turn?(player_id)
-		if (player_id == player_1.id)
+		if (player_id.to_i == player_1.id)
 			if (self.current_turn == "white")
 				#Okay to play, player_1 is white
 				return true
 			else
 				return false
 			end
-		elsif (player_id == player_2.id)
+		elsif (player_id.to_i == player_2.id)
 			if (self.current_turn == "black")
 				#Okay to play, player_2 is black
 				return true
