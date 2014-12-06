@@ -89,6 +89,7 @@ class Game < ActiveRecord::Base
 			piece = find_piece(str_x1, str_y1)
 			x2 = convert_x(str_x2)
 			y2 = convert_y(str_y2)
+			#delete old piece at attempted square if piece is present
 			piece.move(x2, y2)
 	end
 
@@ -101,10 +102,10 @@ class Game < ActiveRecord::Base
 	end
 
 	def valid_move?(player_id, str_x1, str_y1, str_x2, str_y2)
-		#Is it the players turn?
+		#is it the players turn?
 		if (players_turn?(player_id))
-			switch_player_turn()
-			move(str_x1, str_y1, str_x2, str_y2)
+			#is path clear?
+			#can piece move their?
 			return true
 		else
 			#not players turn

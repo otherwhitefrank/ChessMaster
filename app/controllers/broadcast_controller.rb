@@ -46,6 +46,29 @@ class BroadcastController < ApplicationController
 
         #Parse message for grid coordinates
         if (curr_game.valid_move?(user_id, old_x, old_y, attempted_x, attempted_y))
+          #is someone on the attempted square
+          taken_piece = cuur_game.find_piece(attempted_x, attempted_y)
+
+          if (taken_piece != nil)
+            #There was a piece at the old square, tell clients to delete it
+            send_data = {user_id: user_id,
+                         opponent_id: opponent_id,
+                         old_x: old_x,
+                         old_y: old_y,
+                         attempted_x: attempted_x,
+                         attempted_y: attempted_y}
+            send_message(channel_id, 'server:delete_piece', send_data)
+
+            send_data = {user_id: opponent_id,
+                         opponent_id: user_id,
+                         old_x: old_x,
+                         old_y: old_y,
+                         attempted_x: attempted_x,
+                         attempted_y: attempted_y}
+            send_message(channel_id, 'server:delete_piece', send_data)
+          end
+
+          curr_game.move(old_x, old_y, attempted_x, attempted_y)
 
           #Move is okay, do the move
           send_data = {user_id: user_id,
@@ -64,6 +87,8 @@ class BroadcastController < ApplicationController
                        attempted_x: attempted_x,
                        attempted_y: attempted_y}
           send_message(channel_id, 'server:move_ok', send_data)
+
+          curr_game.switch_player_turn()
 
         else
           #Tell client that is not okay, don't change anything, no need to tell other player
