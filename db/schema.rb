@@ -13,18 +13,11 @@
 
 ActiveRecord::Schema.define(version: 20141203192721) do
 
-  create_table "game_boards", force: true do |t|
-    t.integer  "game_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "game_pieces", force: true do |t|
-    t.string   "char_x"
-    t.integer  "x"
-    t.integer  "y"
+    t.string   "x"
+    t.string   "y"
     t.string   "type"
-    t.integer  "game_board_id"
+    t.integer  "game_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -33,36 +26,11 @@ ActiveRecord::Schema.define(version: 20141203192721) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "unique_channel_id"
-  end
-
-  create_table "leader_boards", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "player_profiles", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "player_id"
-  end
-
-  create_table "players", force: true do |t|
-    t.integer  "game_id"
-    t.integer  "wins"
-    t.integer  "losses"
-    t.string   "user_name"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "timers", force: true do |t|
-    t.integer  "game_id"
-    t.integer  "white_game_timer"
-    t.integer  "black_game_timer"
-    t.datetime "timestamp"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer  "player_1_id"
+    t.integer  "player_2_id"
+    t.integer  "white_timer"
+    t.integer  "black_timer"
+    t.string   "current_turn"
   end
 
   create_table "users", force: true do |t|
@@ -79,6 +47,9 @@ ActiveRecord::Schema.define(version: 20141203192721) do
     t.datetime "updated_at"
     t.boolean  "playing_game",           default: false
     t.string   "username"
+    t.integer  "wins"
+    t.integer  "losses"
+    t.integer  "game_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

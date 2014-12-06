@@ -4,26 +4,26 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_one :player
+  #self.primary_key = :id
+  #validates :id, presence: true
 
   validates :username,
   :uniqueness => {
     :case_sensitive => false
   }
 
+  has_one :game, :class_name => 'Game'
+
   attr_accessor :updated_at, :playing_game, :login
+  attr_accessor :wins
+  attr_accessor :losses
+  attr_accessor :username
 
   after_initialize do
-    init_player
     update_time
     puts "User has been initialized!"
   end
 
-  def init_player
-    puts "Creating new Player object"
-    new_player = Player.create
-    new_player.user = self
-  end
 
   def update_time
     "Updated updated_at time"
@@ -51,4 +51,11 @@ class User < ActiveRecord::Base
     end
   end
 
+  def won_game!
+    @wins = @wins + 1
+  end
+
+  def lost_game!
+    @losses = @losses + 1
+  end
 end

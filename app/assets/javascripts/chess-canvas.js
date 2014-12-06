@@ -42,18 +42,22 @@ var Piece = function (x, y, img_url) {
     this.clickDiffX = 0;
     this.clickDiffY = 0;
 
+    //Original X, this is needed to send the piece back to its old position if the move is denied
+    this.oldX = x;
+    this.oldY = y;
+
     //Open our image
     this.img =  new Image;
     this.img.src = img_url;
 };
 
-Piece.prototype.validMove = function(x, y) {
-    this.moveX = x;
-    this.moveY = y;
-};
 
 Piece.prototype.clickWithinPiece = function(x, y) {
-    return (y > this.y && y < this.y + this.height && x > this.x && x < this.x + this.width);
+    return (y >= this.y && y < this.y + this.height && x >= this.x && x < this.x + this.width);
+};
+
+Piece.prototype.oldClickWithinPiece = function(x, y) {
+    return (y >= this.oldY && y < this.oldY + this.height && x >= this.oldX && x < this.oldX + this.width);
 };
 
 Piece.prototype.update = function() {
@@ -114,6 +118,9 @@ function event_listener_mousedown(piece, event) {
     selected_piece = piece;
 
     //Save click diff
+    selected_piece.oldX = selected_piece.x;
+    selected_piece.oldY = selected_piece.y;
+
     selected_piece.clickDiffX = x - selected_piece.x;
     selected_piece.clickDiffY = y - selected_piece.y;
 
@@ -125,19 +132,77 @@ function event_listener_mousedown(piece, event) {
 
 function ask_to_move (piece, attempted_x, attempted_y)
 {
+    piece_grid_data = getGridFromCoord(piece.oldX, piece.oldY );
+    attempted_grid_data = getGridFromCoord(attempted_x, attempted_y);
 
+    data = {
+        old_x: piece_grid_data.x,
+        old_y: piece_grid_data.y,
+        attempted_x: attempted_grid_data.x,
+        attempted_y: attempted_grid_data.y
+    };
+
+    window.send_message('user:ask_to_move', data)
+}
+
+//These need to be global so pusher functions can reach them
+window.ok_to_move = function(data)
+{
+
+    //First get the piece associated with grid coordinates
+    var old_x = data.old_x;
+    var old_y = data.old_y;
+    var attempted_x = data.attempted_x;
+    var attempted_y = data.attempted_y;
+
+    var old_coord = getCoordFromGrid(old_x, old_y );
+    var attempted_coord = getCoordFromGrid(attempted_x, attempted_y );
+
+    var piece = get_piece_at_coord(old_coord.x, old_coord.y)
+
+    //Tell the piece it is okay to move to that position
+
+    piece.old_x = attempted_coord.x;
+    piece.old_y = attempted_coord.y;
+    piece.moveX = attempted_coord.x;
+    piece.moveY = attempted_coord.y;
 
 
 }
 
-function ok_to_move( piece, x, y)
+window.bad_move = function(data)
 {
+
+    //First get the piece associated with grid coordinates
+    var old_x = data.old_x;
+    var old_y = data.old_y;
+    var attempted_x = data.attempted_x;
+    var attempted_y = data.attempted_y;
+
+    var old_coord = getCoordFromGrid(old_x, old_y );
+    var attempted_coord = getCoordFromGrid(attempted_x, attempted_y );
+
+    var piece = get_piece_at_coord(old_coord.x, old_coord.y)
+
+    //Tell the piece it is okay to move to that position
+
+    piece.old_x = old_coord.x;
+    piece.old_y = old_coord.y;
+    piece.moveX = old_coord.x;
+    piece.moveY = old_coord.y;
 
 }
 
-function bad_move (x, y)
+function get_piece_at_coord(x, y)
 {
+    var found_piece = null;
+    pieces.forEach(function (piece) {
+        if (piece.oldClickWithinPiece(x, y)) {
+            found_piece = piece;
+        }
+    });
 
+    return found_piece;
 }
 
 function event_listener_mouseup(piece, event) {
@@ -151,9 +216,6 @@ function event_listener_mouseup(piece, event) {
 
     //Ask server to move piece
     ask_to_move(piece, attempted_x, attempted_y)
-
-
-
 }
 
 function event_listener_mousemove(piece, event) {
@@ -376,11 +438,26 @@ function getCoordFromGrid(letter, num ) {
     x_pos = 75 + (x_i * 75);
     y_pos = (y_i * 75);
 
-
-
     return {
         x: x_pos,
         y: y_pos
+    }
+}
+
+function getGridFromCoord(x, y ) {
+
+    var x_grid = x - MARGIN_X;
+    var y_grid = y;
+
+    x_grid = Math.ceil(x_grid / MARGIN_X);
+    y_grid = Math.ceil(y_grid / MARGIN_Y);
+
+    var x_i = letters[x_grid];
+    var y_i = numbers[y_grid];
+
+    return {
+        x: x_i,
+        y: y_i
     }
 }
 

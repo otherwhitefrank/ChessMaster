@@ -6,20 +6,20 @@ $(document).ready ->
   root.pusher = new Pusher('bca91b4571f77551a885')
   root.wait_room = pusher.subscribe 'wait_room'
 
-  player_1_id = undefined
-  player_2_id = undefined
-  unique_channel_id = undefined
+  root.player_1_id = undefined
+  root.player_2_id = undefined
+  root.unique_channel_id = undefined
 
   root.game_room = {}
 
   if ($('#player_1_id').length != 0)
-    player_1_id = $('#player_1_id').html()
+    window.player_1_id = $('#player_1_id').html()
 
   if ($('#player_2_id').length != 0)
-    player_2_id = $('#player_2_id').html()
+    window.player_2_id = $('#player_2_id').html()
 
   if ($('#unique_channel_id').length != 0)
-    unique_channel_id = $('#unique_channel_id').html()
+    window.unique_channel_id = $('#unique_channel_id').html()
 
   if (player_2_id != undefined)
     #Client is at start_game/join_game, join match channel
@@ -27,9 +27,9 @@ $(document).ready ->
 
   wait_room.bind('server:join_channel', (data) ->
     if (data.active_player_id.toString() == player_1_id)
-      player_1_id = data.active_player_id
-      player_2_id = data.opponent_player_id
-      unique_channel_id = data.channel_id
+      window.player_1_id = data.active_player_id
+      window.player_2_id = data.opponent_player_id
+      window.unique_channel_id = data.channel_id
       #Command Tell other players browser to join game
       join_game(player_1_id, player_2_id, unique_channel_id)
   )
@@ -51,8 +51,9 @@ $(document).ready ->
         data: {
                 message: $("#message").val()
                 event: 'user:said'
-                channel: unique_channel_id
-                id: player_1_id
+                channel: window.unique_channel_id
+                active_id: window.player_1_id
+                opponent_id: window.player_2_id
               }
 
         error: (jqXHR, textStatus, errorThrown) ->
@@ -65,11 +66,18 @@ $(document).ready ->
 
 root = exports ? this
 
-root.send_message = (message) ->
+root.send_message = (event_type, message) ->
   $.ajax '/broadcast/broadcast', {
     type: 'POST'
 
-    data: message
+    data: {
+      message: message,
+      event: event_type,
+      channel: window.unique_channel_id,
+      active_id: window.player_1_id
+      opponent_id: window.player_2_id
+
+    }
 
     error: (jqXHR, textStatus, errorThrown) ->
       console.log "AJAX Error: #{textStatus}<br>"
@@ -85,6 +93,14 @@ bind_events = (channel_id) ->
     $('#message-area').append "#{data.message}<br>"
   )
 
+  window.game_room.bind('server:move_ok', (data) ->
+    window.ok_to_move(data)
+  )
+
+  window.game_room.bind('server:move_not_ok', (data) ->
+    window.bad_move(data)
+  )
+
 
 unbind_events = (channel_id) ->
   window.game_room = window.pusher.unsubscribe data.channel_id
@@ -95,3 +111,5 @@ join_game = (player_1_id, player_2_id, unique_channel_id) ->
   $('#opponent_user_id').val(player_2_id.toString())
   $('#unique_channel_id').val(unique_channel_id)
   $('#join_game_id').submit()
+
+
