@@ -25,6 +25,11 @@ class BroadcastController < ApplicationController
   end
 
 
+  def send_message(channel_id, event, data)
+    Pusher[channel_id].trigger(event, data)
+  end
+
+
   def route_broadcast(user_id, opponent_id, channel_id, event, message)
     case event
       when 'user:said'
@@ -40,36 +45,49 @@ class BroadcastController < ApplicationController
         curr_game = get_board_from_channel_id(channel_id)
 
         #Parse message for grid coordinates
-        if (curr_game.valid_move?(old_x, old_y, attempted_x, attempted_y))
+        if (curr_game.valid_move?(user_id, old_x, old_y, attempted_x, attempted_y))
+
+          #Change from white/black or vice versus
+          curr_game.switch_player_turn
+
           #Move is okay, do the move
-          Pusher[channel_id].trigger('server:move_ok', {user_id: user_id,
-                                                        opponent_id: opponent_id,
-                                                        old_x: old_x,
-                                                        old_y: old_y,
-                                                        attempted_x: attempted_x,
-                                                        attempted_y: attempted_y})
+          send_data = {user_id: user_id,
+                       opponent_id: opponent_id,
+                       old_x: old_x,
+                       old_y: old_y,
+                       attempted_x: attempted_x,
+                       attempted_y: attempted_y}
+          send_message(channel_id, 'server:move_ok', send_data)
+
           #Tell the other player to issue the same command switching user_id's
-          Pusher[channel_id].trigger('server:move_ok', {user_id: opponent_id,
-                                                        opponent_id: user_id,
-                                                        old_x: old_x,
-                                                        old_y: old_y,
-                                                        attempted_x: attempted_x,
-                                                        attempted_y: attempted_y})
+          send_data = {user_id: opponent_id,
+                       opponent_id: user_id,
+                       old_x: old_x,
+                       old_y: old_y,
+                       attempted_x: attempted_x,
+                       attempted_y: attempted_y}
+          send_message(channel_id, 'server:move_ok', send_data)
+
         else
           #Tell client that is not okay, don't change anything, no need to tell other player
-          Pusher[channel_id].trigger('server:move_not_ok', {user_id: user_id,
-                                                            opponent_id: opponent_id,
-                                                            old_x: old_x,
-                                                            old_y: old_y,
-                                                            attempted_x: attempted_x,
-                                                            attempted_y: attempted_y})
+          send_data = {user_id: user_id,
+                       opponent_id: opponent_id,
+                       old_x: old_x,
+                       old_y: old_y,
+                       attempted_x: attempted_x,
+                       attempted_y: attempted_y}
+          send_message(channel_id, 'server:move_not_ok', send_data)
+
+
           #Tell the other player to issue the same command switching user_id's
-          Pusher[channel_id].trigger('server:move_not_ok', {user_id: opponent_id,
-                                                        opponent_id: user_id,
-                                                        old_x: old_x,
-                                                        old_y: old_y,
-                                                        attempted_x: attempted_x,
-                                                        attempted_y: attempted_y})
+          send_data = {user_id: opponent_id,
+                       opponent_id: user_id,
+                       old_x: old_x,
+                       old_y: old_y,
+                       attempted_x: attempted_x,
+                       attempted_y: attempted_y}
+          send_message(channel_id, 'server:move_not_ok', send_data)
+
         end
     end
   end

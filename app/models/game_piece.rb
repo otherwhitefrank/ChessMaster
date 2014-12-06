@@ -6,9 +6,7 @@ class GamePiece < ActiveRecord::Base
   #validates :game, presence: true
 
   belongs_to :game, :class_name => 'Game'
-
-	attr_accessor :x
-	attr_accessor :y
+	
 	attr_accessor :type
 
 	scope :pawns, -> { where(type: 'Pawn') } 
