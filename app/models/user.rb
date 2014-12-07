@@ -17,7 +17,6 @@ class User < ActiveRecord::Base
   attr_accessor :updated_at, :playing_game, :login
   attr_accessor :wins
   attr_accessor :losses
-  attr_accessor :username
 
   after_initialize do
     update_time
