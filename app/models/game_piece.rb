@@ -24,18 +24,15 @@ class GamePiece < ActiveRecord::Base
   end
 
   def move(new_x, new_y)
- 		if self.valid_piece_move?(new_x, new_y)
-      self.update_attributes x: (new_x + 96).chr.to_s
+      self.update_attributes x: new_x.to_s
       self.update_attributes y: new_y.to_s
-   	end
   end
 
   def valid_piece_move?(x, y)
-		true
   end
   
  	def convert_x(str_x)
-		str_x.ord.to_i - 96
+		str_x.ord.to_i - 48
 	end
 
 	def convert_y(str_y)
