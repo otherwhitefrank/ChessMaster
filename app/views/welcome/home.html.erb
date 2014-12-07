@@ -5,17 +5,18 @@
       <div class="container">
         <center><h1>ChessMaster</h1></center>
         <br>
-
+        <center>
         <p class="lead">Welcome <%= current_user.username %>! Select a player from the list below and start a match.</p>
       </div>
-
+      </center>
+      <center>
       <%= form_tag(welcome_start_game_path, method: "post") do %>
           <%= label_tag(@online_users, "Select an Active User:") %>
           <%= hidden_field_tag 'active_user', @current_user_id %>
-          <%= select_tag("selected_user", options_from_collection_for_select(@online_users.collect, "id", "email")) %>
+          <%= select_tag("selected_user", options_from_collection_for_select(@online_users.collect, "id", "username")) %>
           <%= submit_tag("Start Game!") %>
       <% end %>
-
+      </center>
     </div></center>
 
 

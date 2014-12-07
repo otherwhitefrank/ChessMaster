@@ -19,6 +19,10 @@ class User < ActiveRecord::Base
   attr_accessor :losses
 
   after_initialize do
+    if @wins.nil?
+      @wins = 0
+      @losses = 0
+    end
     update_time
     puts "User has been initialized!"
   end
