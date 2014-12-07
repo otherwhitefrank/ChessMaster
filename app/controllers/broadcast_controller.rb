@@ -47,7 +47,7 @@ class BroadcastController < ApplicationController
         #Parse message for grid coordinates
         if (curr_game.valid_move?(user_id, old_x, old_y, attempted_x, attempted_y))
           #is someone on the attempted square
-          taken_piece = cuur_game.find_piece(attempted_x, attempted_y)
+          taken_piece = curr_game.find_piece(attempted_x, attempted_y)
 
           if (taken_piece != nil)
             #There was a piece at the old square, tell clients to delete it

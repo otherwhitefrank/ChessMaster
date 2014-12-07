@@ -106,7 +106,12 @@ class Game < ActiveRecord::Base
 		if (players_turn?(player_id))
 			#is path clear?
 			#can piece move their?
-			return true
+      piece = find_piece(str_x1, str_y1)
+      x2 = convert_x(str_x2)
+      y2 = convert_y(str_y2)
+      if(piece.valid_piece_move?(x2, y2))
+        return true
+      end
 		else
 			#not players turn
 			return false
