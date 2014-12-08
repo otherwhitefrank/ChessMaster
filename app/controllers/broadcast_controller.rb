@@ -50,6 +50,8 @@ class BroadcastController < ApplicationController
           taken_piece = curr_game.find_piece(attempted_x, attempted_y)
 
           if (taken_piece != nil)
+
+            curr_game.capture_piece(old_x, old_y, attempted_x, attempted_y)
             #There was a piece at the old square, tell clients to delete it
             send_data = {user_id: user_id,
                          opponent_id: opponent_id,
