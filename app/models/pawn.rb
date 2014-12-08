@@ -4,11 +4,11 @@ class Pawn < GamePiece
 		x = convert_x(self.x)
 		y = convert_y(self.y)
 		if x == new_x && self.color == 'black'
-			if y == new_y - 1
+			if y == new_y - 1 || (y == new_y - 2 && y == 2)
 				return true
 			end
 		elsif x == new_x && self.color == 'white'
-			if y == new_y + 1
+			if y == new_y + 1 || (y == new_y + 2 && y == 7)
 				return true
 			end
 		end
