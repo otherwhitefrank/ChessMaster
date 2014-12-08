@@ -15,7 +15,7 @@ var elem,
     MARGIN_Y = 75,
     selected_piece;
 
-var BLACK_AT_BOTTOM = true,
+var BLACK_AT_BOTTOM = false,
     REINIT_BOARD = false;
 
 var letters = [],
@@ -472,7 +472,6 @@ function init_pieces() {
     {
         drawWhiteAtBottom();
     }
-
 
 }
 

@@ -19,6 +19,8 @@ class WelcomeController < ApplicationController
     puts @player_1
     puts @player_2
 
+    @player_color = "white"
+
     @current_game = Game.new
     @current_game.initiate_game(@player_1, @player_2, @unique_channel_id, 500)
     @current_game.save!
@@ -37,6 +39,7 @@ class WelcomeController < ApplicationController
     @player_1_id = params[:active_user_id]
     @player_2_id = params[:opponent_user_id]
     @unique_channel_id = params[:unique_channel_id]
+    @player_color = "black"
   end
 
   def home
