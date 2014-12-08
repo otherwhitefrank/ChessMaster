@@ -13,6 +13,21 @@ class Pawn < GamePiece
 			end
 		end
 		return false
-	end
+  end
+
+  def valid_pawn_attack?(new_x, new_y)
+    x = convert_x(self.x)
+    y = convert_y(self.y)
+    if (x == new_x + 1 || x == new_x - 1) && self.color == 'black'
+      if y == new_y - 1
+        return true
+      end
+    elsif (x == new_x + 1 || x == new_x - 1) && self.color == 'white'
+      if y == new_y + 1
+        return true
+      end
+    end
+    return false
+  end
 
 end

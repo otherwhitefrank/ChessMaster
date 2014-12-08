@@ -28,6 +28,9 @@ class GamePiece < ActiveRecord::Base
 
   def valid_piece_move?(x, y)
   end
+
+  def valid_pawn_attack?(x1, y1, x2, y2)
+  end
   
  	def convert_x(str_x)
 		str_x.ord.to_i - 48

@@ -110,7 +110,9 @@ class Game < ActiveRecord::Base
             x2 = convert_x(str_x2)
             y2 = convert_y(str_y2)
             if find_piece(str_x2, str_y2) == nil || same_team?(str_x1, str_y1, str_x2, str_y2) == false
-              if piece.valid_piece_move?(x2, y2)
+              if piece.type == 'Pawn' && find_piece(str_x2, str_y2) != nil && piece.valid_pawn_attack?(x2, y2)
+                return true
+              elsif piece.valid_piece_move?(x2, y2)
                 return true
               end
             end
