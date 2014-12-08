@@ -21,6 +21,11 @@ $(document).ready ->
   if ($('#unique_channel_id').length != 0)
     window.unique_channel_id = $('#unique_channel_id').html()
 
+  if ($('#player_color').length != 0)
+    window.player_color = $('#player_color').html()
+    if (window.player_color == "white")
+      window.switch_board()
+
   if (player_2_id != undefined)
     #Client is at start_game/join_game, join match channel
     bind_events(unique_channel_id)
