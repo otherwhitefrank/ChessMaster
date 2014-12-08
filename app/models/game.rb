@@ -29,7 +29,7 @@ class Game < ActiveRecord::Base
   def initiate_game(player_1, player_2, unique_channel_id, match_time)
     self.player_1 = player_1
     self.player_2 = player_2
-    self.current_turn = "white"
+    self.current_turn = 'white'
 
     self.unique_channel_id = unique_channel_id
     self.white_timer = match_time
@@ -94,23 +94,25 @@ class Game < ActiveRecord::Base
   end
 
   def switch_player_turn
-    if (self.current_turn == "white")
-      self.current_turn = "black"
-    elsif (self.current_turn == "black")
-      self.current_turn = "white"
+    if (self.current_turn == 'white')
+      self.update_attributes current_turn: 'black'
+    elsif (self.current_turn == 'black')
+      self.update_attributes current_turn: 'white'
     end
   end
 
   def valid_move?(player_id, str_x1, str_y1, str_x2, str_y2)
     if players_turn?(player_id)
-      if diff_square?(str_x1, str_y1, str_x2, str_y2)
-        if clear_path?(str_x1, str_y1, str_x2, str_y2)
-          piece = find_piece(str_x1, str_y1)
-          x2 = convert_x(str_x2)
-          y2 = convert_y(str_y2)
-          if find_piece(str_x2, str_y2) == nil || same_team?(str_x1, str_y1, str_x2, str_y2) == false
-            if piece.valid_piece_move?(x2, y2)
-              return true
+      if(my_piece?(str_x1, str_y1))
+        if diff_square?(str_x1, str_y1, str_x2, str_y2)
+          if clear_path?(str_x1, str_y1, str_x2, str_y2)
+            piece = find_piece(str_x1, str_y1)
+            x2 = convert_x(str_x2)
+            y2 = convert_y(str_y2)
+            if find_piece(str_x2, str_y2) == nil || same_team?(str_x1, str_y1, str_x2, str_y2) == false
+              if piece.valid_piece_move?(x2, y2)
+                return true
+              end
             end
           end
         end
@@ -138,16 +140,17 @@ class Game < ActiveRecord::Base
     end
   end
 
-  def check?
-    x = (self.game_piece.find_by type: 'King').x
-    y = (self.game_piece.find_by type: 'King').y
+  def check?(player_id)
+    x = (GamePiece.find_by type: 'King', color: self.current_turn).x
+    str_x = (x.to_i + 96).chr.to_s
+    str_y = (GamePiece.find_by type: 'King', color: self.current_turn).y
     (1..8) .each do |i|
+      str_i = (i + 96).chr.to_s
       (1..8) .each do |j|
+        str_j = j.to_s
         if find_piece(i, j) != nil
-          if valid_move?(i, j, x, y)
-            if find_piece(i, j).color != find_piece(x, y).color
-              true
-            end
+          if valid_move?(player_id, str_i, str_j, str_x, str_y)
+            true
           end
         end
       end
@@ -155,22 +158,17 @@ class Game < ActiveRecord::Base
     false
   end
 
-  def checkmate?
-    if check?
-      x = (self.game_piece.find_by type: 'King').x
-      y = (self.game_piece.find_by type: 'King').y
-      (1..8) .each do |i|
-        (1..8) .each do |j|
-          if find_piece(i, j) != nil
-            if valid_move?(i, j, x, y)
-              if find_piece(i, j).color != find_piece(x, y)
-                true
-              end
-            end
-          end
+  def checkmate?(player_id)
+    (str_x - 1..str_x + 1) .each do |i|
+      str_i = (i + 96).chr.to_s
+      (str_y - 1..str_y + 1) .each do |j|
+        str_j = j.to_s
+        if valid_move?(player_id, str_x, str_y, str_i, str_j)
+          false
         end
       end
     end
+    true
   end
 
   def promote_pawn
@@ -192,10 +190,12 @@ class Game < ActiveRecord::Base
     end
   end
 
-  def capture_piece(x1, y1, x2, y2)
+  def capture_piece(str_x1, str_y1, str_x2, str_y2)
+    x2 = convert_x(str_x2)
+    y2 = convert_y(str_y2)
     if open_square?(x2, y2) == false
-      if (find_piece(x1, y1).color != find_piece(x2, y2).color)
-        self.game_piece.delete(find_piece(x2, y2))
+      if (find_piece(str_x1, str_y1).color != find_piece(str_x2, str_y2).color)
+        self.game_piece.delete(find_piece(str_x2, str_y2))
       end
     end
   end
@@ -213,6 +213,14 @@ class Game < ActiveRecord::Base
       false
     else
       true
+    end
+  end
+
+  def my_piece?(str_x1, str_y1)
+    if self.current_turn == find_piece(str_x1, str_y1).color
+      true
+    else
+      false
     end
   end
 
@@ -280,7 +288,7 @@ class Game < ActiveRecord::Base
           end
         end
       elsif y1 > y2
-        (y2 + 1..y1 - 1).each do |i|
+        (y1 + 1..y2 - 1).each do |i|
           j = j + 1
           if open_square?(x1 - j, i) == false
             return false
@@ -296,7 +304,7 @@ class Game < ActiveRecord::Base
           end
         end
       elsif y1 > y2
-        (y2 + 1..y1 - 1).each do |i|
+        (y1 + 1..y2 - 1).each do |i|
           j = j + 1
           if open_square?(x1 + j, i) == false
             return false
