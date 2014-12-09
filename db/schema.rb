@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141203192721) do
+ActiveRecord::Schema.define(version: 20141209052803) do
 
   create_table "game_pieces", force: true do |t|
     t.string   "x"
@@ -51,6 +51,8 @@ ActiveRecord::Schema.define(version: 20141203192721) do
     t.integer  "wins"
     t.integer  "losses"
     t.integer  "game_id"
+    t.string   "location"
+    t.string   "about"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

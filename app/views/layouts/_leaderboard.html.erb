@@ -18,7 +18,7 @@
           <tr>
           <% @users.sort_by{ |user| user.wins.size }.reverse.each_with_index do |user, index| %>
             <th><%= index+1 %> </th>
-            <th><%= user.username %></th>
+            <th><%=link_to user.username, profile_path(user) %></th>
             <th><%= user.wins %></th>
             <th><%= user.losses %></th>
           </tr>
