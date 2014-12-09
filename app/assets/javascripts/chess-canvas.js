@@ -193,9 +193,8 @@ window.bad_move = function(data)
 
     var piece = get_piece_at_coord(old_coord.x, old_coord.y)
 
-    //Tell the piece it is okay to move to that position
-
-    piece.setPiecePosition(attempted_x, attempted_y);
+    //Tell the piece it is NOT okay to move to that position
+    piece.setPiecePosition(old_x, old_y);
 
 }
 
@@ -470,7 +469,7 @@ function init_pieces() {
     }
     else
     {
-        drawWhiteAtBottom();
+        drawBlackAtBottom();
     }
 
 }

@@ -290,7 +290,7 @@ class Game < ActiveRecord::Base
           end
         end
       elsif y1 > y2
-        (y1 + 1..y2 - 1).each do |i|
+        (y1 + 1).downto(y2 - 1) do |i|
           j = j + 1
           if open_square?(x1 - j, i) == false
             return false
@@ -306,7 +306,7 @@ class Game < ActiveRecord::Base
           end
         end
       elsif y1 > y2
-        (y1 + 1..y2 - 1).each do |i|
+        (y1 + 1).downto(y2 - 1) do |i|
           j = j + 1
           if open_square?(x1 + j, i) == false
             return false
@@ -318,7 +318,11 @@ class Game < ActiveRecord::Base
   end
 
   def clear_path_queen?(x1, y1, x2, y2)
-    if clear_path_bishop?(x1, y1, x2, y2) || clear_path_rook?(x1, y1, x2, y2)
+    if x1 == x2 || y1 == y2
+      if clear_path_rook?(x1, y1, x2, y2)
+        true
+      end
+    elsif clear_path_bishop?(x1, y1, x2, y2)
       true
     else
       false
