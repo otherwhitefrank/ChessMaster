@@ -1,6 +1,6 @@
 <div class="container">
       <div class="row">
-      <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+      <div class="col-md-7  toppad  pull-right col-md-offset-3 ">
       </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
    
@@ -20,6 +20,10 @@
                         <td><%= @user.email %></td>
                       </tr>
                       <tr>
+                        <td>Location</td>
+                        <td><%= @user.location %></td>
+                      </tr>
+                      <tr>
                         <td>Total Games</td>
                         <td><%= @user.total_games %></td>
                       <tr>
@@ -33,6 +37,10 @@
                       <tr>
                         <td>Last Signed In</td>
                         <td><%= @user.last_sign_in_at %></td>
+                      </tr>
+                      <tr>
+                        <td>About Me</td>
+                        <td><%= @user.about %></td>
                       </tr>
                     </tbody>
                   </table>
