@@ -99,11 +99,18 @@ bind_events = (channel_id) ->
   )
 
   window.game_room.bind('server:move_ok', (data) ->
-    window.ok_to_move(data)
+    if (data.user_id == root.player_1_id)
+      window.ok_to_move(data)
   )
 
   window.game_room.bind('server:move_not_ok', (data) ->
-    window.bad_move(data)
+    if (data.user_id == root.player_1_id)
+      window.bad_move(data)
+  )
+
+  window.game_room.bind('server:delete_piece', (data) ->
+    if (data.user_id == root.player_1_id)
+      window.delete_piece(data)
   )
 
 
