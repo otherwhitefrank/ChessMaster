@@ -4,7 +4,7 @@
        <div class="panel-body">
        <% @users = User.all %>
         <center><h3>Leaderboard</h3>
-              <h5>Top 5 Players</h5>
+              <h5>Top 5 Players <%= link_to '(View All Players)', profiles_path %></h5>
           <table class="table table-striped">
           <thead>
             <tr>
@@ -16,7 +16,7 @@
           </thead>
           <tbody>
           <tr>
-          <% @users.sort_by{ |user| user.wins.size }.reverse.each_with_index do |user, index| %>
+          <% @users.sort_by{ |user| user.wins.size }.reverse[0...5].each_with_index do |user, index| %>
             <th><%= index+1 %> </th>
             <th><%=link_to user.username, profile_path(user) %></th>
             <th><%= user.wins %></th>

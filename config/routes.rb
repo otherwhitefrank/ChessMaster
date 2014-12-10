@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   post 'welcome/join_game'
   post 'profiles/show'
+  
   get 'welcome/home'
 
 

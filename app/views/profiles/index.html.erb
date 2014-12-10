@@ -1,0 +1,31 @@
+     <!-- Leaderboard sample -->
+       <div class="col-md-6 col-md-offset-3" >
+       <div class="panel panel-default">
+       <div class="panel-body">
+       <% @users = User.all %>
+        <center><h3>Leaderboard</h3>
+              <h5>All Players</h5>
+          <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Username</th>
+              <th>Wins</th>
+              <th>Losses</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <% @users.sort_by{ |user| user.wins.size }.reverse.each_with_index do |user, index| %>
+            <th><%= index+1 %> </th>
+            <th><%=link_to user.username, profile_path(user) %></th>
+            <th><%= user.wins %></th>
+            <th><%= user.losses %></th>
+          </tr>
+           <% end %>
+           </tbody>
+          </table>
+          <%= link_to 'Back', root_path %>
+         </center>
+         </div></div>
+         </div>
