@@ -1,21 +1,16 @@
 <% content_for :javascript_includes do %>
     <%= javascript_include_tag "forms.js" %>
 <% end %>
-
-<canvas id="myCanvas" width="675" height="675"
+<div class="row">
+  <div class="col-xs-12 col-md-8">
+  	<canvas id="myCanvas" width="675" height="675"
         style="">
 </canvas>
-
-<form role="form">
-  <div class="form-group">
-    <label for="message">Message</label>
-    <input type="text" class="form-control" id="message"
-           placeholder="Enter message..." />
   </div>
-</form>
-
-
-<div id="message-area">
+  <div class="col-xs-6 col-md-4">
+  	
+<%= render 'layouts/chatbox' %>
+  </div>
 </div>
 
 <div id="player_1_id" style="display: none;"><%= @player_1.id %></div>
