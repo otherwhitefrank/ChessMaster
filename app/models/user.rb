@@ -61,4 +61,8 @@ class User < ActiveRecord::Base
   def lost_game!
     @losses = @losses + 1
   end
+
+  def total_games
+    @wins + @losses
+  end
 end

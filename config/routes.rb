@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  resources :player_profiles
-
+  resources :profiles
+  resources :users
   resources :game_boards
 
   post 'broadcast/broadcast'
-
   #Welcome screen
   post 'welcome/start_game'
 
   post 'welcome/join_game'
-
+  post 'profiles/show'
+  
   get 'welcome/home'
 
 
