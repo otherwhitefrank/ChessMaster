@@ -104,8 +104,9 @@ Piece.prototype.lerp = function (v0, v1, t) {
 
 function init_canvas() {
     elem = document.getElementById('myCanvas');
-    elemLeft = elem.offsetLeft;
-    elemTop = elem.offsetTop;
+    jElem = $('#myCanvas');
+    elemLeft = jElem.offset().left;
+    elemTop = jElem.offset().top;
     context = elem.getContext('2d');
     elements = [];
 
