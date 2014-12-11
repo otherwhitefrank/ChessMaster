@@ -23,11 +23,14 @@ var letters = [],
 
 //Define a piece
 
-var Piece = function (grid_x, grid_y, img_url) {
+var Piece = function (grid_x, grid_y, img_url, color) {
     var coords = getCoordFromGrid(grid_x, grid_y);
 
     this.grid_x = grid_x;
     this.grid_y = grid_y;
+
+
+    this.color = color;
 
     this.x = coords.x;
     this.y = coords.y;
@@ -205,7 +208,7 @@ window.delete_piece = function(data) {
 
     var attempted_coord = getCoordFromGrid(attempted_x, attempted_y);
 
-    var piece = get_piece_at_coord(attempted_coord.x, attempted_coord.y)
+    var piece = get_piece_at_coord_with_color(attempted_coord.x, attempted_coord.y, piece_color)
 
     var index = pieces.indexOf(piece);
 
@@ -227,10 +230,10 @@ function get_piece_at_coord(x, y) {
     return found_piece;
 }
 
-function get_piece_at_coord(x, y, color) {
+function get_piece_at_coord_with_color(x, y, color) {
     var found_piece = null;
     pieces.forEach(function (piece) {
-        if (piece.oldClickWithinPiece(x, y) && piece.color == color) {
+        if (piece.clickWithinPiece(x, y) && piece.color == color) {
             found_piece = piece;
         }
     });

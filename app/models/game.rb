@@ -29,7 +29,7 @@ class Game < ActiveRecord::Base
   def initiate_game(player_1, player_2, unique_channel_id, match_time)
     self.player_1 = player_1
     self.player_2 = player_2
-    self.current_turn = 'black'
+    self.current_turn = 'white'
 
     self.unique_channel_id = unique_channel_id
     self.white_timer = match_time
