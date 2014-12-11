@@ -29,7 +29,7 @@ class Game < ActiveRecord::Base
   def initiate_game(player_1, player_2, unique_channel_id, match_time)
     self.player_1 = player_1
     self.player_2 = player_2
-    self.current_turn = 'white'
+    self.current_turn = 'black'
 
     self.unique_channel_id = unique_channel_id
     self.white_timer = match_time
@@ -37,39 +37,39 @@ class Game < ActiveRecord::Base
   end
 
   def init_pieces
-    self.game_piece << GamePiece.new(x: 1, y: 2, type: 'Pawn', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 2, y: 2, type: 'Pawn', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 3, y: 2, type: 'Pawn', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 4, y: 2, type: 'Pawn', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 5, y: 2, type: 'Pawn', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 6, y: 2, type: 'Pawn', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 7, y: 2, type: 'Pawn', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 8, y: 2, type: 'Pawn', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 1, y: 1, type: 'Rook', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 8, y: 1, type: 'Rook', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 2, y: 1, type: 'Knight', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 7, y: 1, type: 'Knight', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 3, y: 1, type: 'Bishop', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 6, y: 1, type: 'Bishop', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 4, y: 1, type: 'Queen', color: 'black', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 5, y: 1, type: 'King', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '1', y: '2', type: 'Pawn', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '2', y: '2', type: 'Pawn', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '3', y: '2', type: 'Pawn', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '4', y: '2', type: 'Pawn', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '5', y: '2', type: 'Pawn', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '6', y: '2', type: 'Pawn', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '7', y: '2', type: 'Pawn', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '8', y: '2', type: 'Pawn', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '1', y: '1', type: 'Rook', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '8', y: '1', type: 'Rook', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '2', y: '1', type: 'Knight', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '7', y: '1', type: 'Knight', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '3', y: '1', type: 'Bishop', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '6', y: '1', type: 'Bishop', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '4', y: '1', type: 'Queen', color: 'black', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '5', y: '1', type: 'King', color: 'black', game_id: self.id)
 
-    self.game_piece << GamePiece.new(x: 1, y: 7, type: 'Pawn', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 2, y: 7, type: 'Pawn', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 3, y: 7, type: 'Pawn', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 4, y: 7, type: 'Pawn', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 5, y: 7, type: 'Pawn', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 6, y: 7, type: 'Pawn', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 7, y: 7, type: 'Pawn', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 8, y: 7, type: 'Pawn', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 1, y: 8, type: 'Rook', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 8, y: 8, type: 'Rook', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 2, y: 8, type: 'Knight', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 7, y: 8, type: 'Knight', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 3, y: 8, type: 'Bishop', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 6, y: 8, type: 'Bishop', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 4, y: 8, type: 'Queen', color: 'white', game_id: self.id)
-    self.game_piece << GamePiece.new(x: 5, y: 8, type: 'King', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '1', y: '7', type: 'Pawn', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '2', y: '7', type: 'Pawn', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '3', y: '7', type: 'Pawn', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '4', y: '7', type: 'Pawn', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '5', y: '7', type: 'Pawn', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '6', y: '7', type: 'Pawn', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '7', y: '7', type: 'Pawn', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '8', y: '7', type: 'Pawn', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '1', y: '8', type: 'Rook', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '8', y: '8', type: 'Rook', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '2', y: '8', type: 'Knight', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '7', y: '8', type: 'Knight', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '3', y: '8', type: 'Bishop', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '6', y: '8', type: 'Bishop', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '4', y: '8', type: 'Queen', color: 'white', game_id: self.id)
+    self.game_piece << GamePiece.new(x: '5', y: '8', type: 'King', color: 'white', game_id: self.id)
   end
 
 
