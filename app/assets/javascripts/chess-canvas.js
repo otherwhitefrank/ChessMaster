@@ -83,6 +83,7 @@ Piece.prototype.update = function () {
         this.x = this.lerp(this.x, this.moveX, animT);
         if (Math.abs(this.moveX - this.x) < delta) {
             this.x = this.moveX;
+            //this.oldX = this.moveX;
         }
     }
 
@@ -90,6 +91,7 @@ Piece.prototype.update = function () {
         this.y = this.lerp(this.y, this.moveY, animT);
         if (Math.abs(this.moveY - this.y) < delta) {
             this.y = this.moveY;
+            //this.oldY = this.moveY;
         }
     }
 
@@ -199,6 +201,7 @@ window.delete_piece = function(data) {
     var old_y = data.old_y;
     var attempted_x = data.attempted_x;
     var attempted_y = data.attempted_y;
+    var piece_color = data.color;
 
     var attempted_coord = getCoordFromGrid(attempted_x, attempted_y);
 
@@ -224,6 +227,17 @@ function get_piece_at_coord(x, y) {
     return found_piece;
 }
 
+function get_piece_at_coord(x, y, color) {
+    var found_piece = null;
+    pieces.forEach(function (piece) {
+        if (piece.oldClickWithinPiece(x, y) && piece.color == color) {
+            found_piece = piece;
+        }
+    });
+
+    return found_piece;
+}
+
 function event_listener_mouseup(piece, event) {
     WATCHING_CLICK_EVENT = false;
 
@@ -233,8 +247,17 @@ function event_listener_mouseup(piece, event) {
     var attempted_x = Math.floor((x) / 75) * 75;
     var attempted_y = Math.floor((y) / 75) * 75;
 
-    //Ask server to move piece
-    ask_to_move(piece, attempted_x, attempted_y)
+    piece_grid_data = getGridFromCoord(piece.oldX, piece.oldY);
+    attempted_grid_data = getGridFromCoord(attempted_x, attempted_y);
+
+    if (!(piece_grid_data.x == attempted_grid_data.x && piece_grid_data.y == attempted_grid_data.y)) {
+        //Ask server to move piece
+        ask_to_move(piece, attempted_x, attempted_y)
+    }
+    else
+    {
+        piece.setPiecePosition(piece_grid_data.x, piece_grid_data.y);
+    }
 }
 
 function event_listener_mousemove(piece, event) {
@@ -461,8 +484,8 @@ function getGridFromCoord(x, y) {
     var x_grid = x - MARGIN_X;
     var y_grid = y;
 
-    x_grid = Math.ceil(x_grid / MARGIN_X);
-    y_grid = Math.ceil(y_grid / MARGIN_Y);
+    x_grid = Math.floor(x_grid / MARGIN_X);
+    y_grid = Math.floor(y_grid / MARGIN_Y);
 
     var x_i = letters[x_grid];
     var y_i = numbers[y_grid];
@@ -483,104 +506,104 @@ function init_pieces() {
 function drawPiecesOnBoard() {
 
     //Draw white rook 1 and 2
-    var whiteRook1 = new Piece('a', '8', '/assets/chess_pieces/Chess_symbols_r2_c3.png');
+    var whiteRook1 = new Piece('a', '1', '/assets/chess_pieces/Chess_symbols_r1_c3.png', 'white');
     pieces.push(whiteRook1);
 
-    var whiteRook2 = new Piece('h', '8', '/assets/chess_pieces/Chess_symbols_r2_c3.png');
+    var whiteRook2 = new Piece('h', '1', '/assets/chess_pieces/Chess_symbols_r1_c3.png', 'white');
     pieces.push(whiteRook2);
 
 
     //Draw white knight 1 and 2
-    var whiteKnight1 = new Piece('b', '8', '/assets/chess_pieces/Chess_symbols_r2_c4.png');
+    var whiteKnight1 = new Piece('b', '1', '/assets/chess_pieces/Chess_symbols_r1_c4.png', 'white');
     pieces.push(whiteKnight1);
 
-    var whiteKnight2 = new Piece('g', '8', '/assets/chess_pieces/Chess_symbols_r2_c4.png');
+    var whiteKnight2 = new Piece('g', '1', '/assets/chess_pieces/Chess_symbols_r1_c4.png', 'white');
     pieces.push(whiteKnight2);
 
 
     //Draw white bishop 1 and 2
-    var whiteBishop1 = new Piece('c', '8', '/assets/chess_pieces/Chess_symbols_r2_c5.png');
+    var whiteBishop1 = new Piece('c', '1', '/assets/chess_pieces/Chess_symbols_r1_c5.png', 'white');
     pieces.push(whiteBishop1);
 
-    var whiteBishop2 = new Piece('f', '8', '/assets/chess_pieces/Chess_symbols_r2_c5.png');
+    var whiteBishop2 = new Piece('f', '1', '/assets/chess_pieces/Chess_symbols_r1_c5.png', 'white');
     pieces.push(whiteBishop2);
 
     //Draw white king
-    var whiteKing = new Piece('e', '8', '/assets/chess_pieces/Chess_symbols_r2_c1.png');
+    var whiteKing = new Piece('e', '1', '/assets/chess_pieces/Chess_symbols_r1_c1.png', 'white');
     pieces.push(whiteKing);
 
     //Draw white queen
-    var whiteQueen = new Piece('d', '8', '/assets/chess_pieces/Chess_symbols_r2_c2.png');
+    var whiteQueen = new Piece('d', '1', '/assets/chess_pieces/Chess_symbols_r1_c2.png', 'white');
     pieces.push(whiteQueen);
 
     //Draw white pawns
-    var whitePawn1 = new Piece('a', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png');
-    pieces.push(whitePawn1);
-    var whitePawn2 = new Piece('b', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png');
+    var whitePawn1 = new Piece('a', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png', 'white');
+    pieces.push(whitePawn1)
+    var whitePawn2 = new Piece('b', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png', 'white');
     pieces.push(whitePawn2);
-    var whitePawn3 = new Piece('c', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png');
+    var whitePawn3 = new Piece('c', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png', 'white');
     pieces.push(whitePawn3);
-    var whitePawn4 = new Piece('d', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png');
+    var whitePawn4 = new Piece('d', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png', 'white');
     pieces.push(whitePawn4);
-    var whitePawn5 = new Piece('e', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png');
+    var whitePawn5 = new Piece('e', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png', 'white');
     pieces.push(whitePawn5);
-    var whitePawn6 = new Piece('f', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png');
+    var whitePawn6 = new Piece('f', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png', 'white');
     pieces.push(whitePawn6);
-    var whitePawn7 = new Piece('g', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png');
+    var whitePawn7 = new Piece('g', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png', 'white');
     pieces.push(whitePawn7);
-    var whitePawn8 = new Piece('h', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png');
+    var whitePawn8 = new Piece('h', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png', 'white');
     pieces.push(whitePawn8);
 
 
     //Draw all Black!
 
     //Draw black rook 1 and 2
-    var blackRook1 = new Piece('a', '1', '/assets/chess_pieces/Chess_symbols_r1_c3.png');
+    var blackRook1 = new Piece('a', '8', '/assets/chess_pieces/Chess_symbols_r2_c3.png', 'black');
     pieces.push(blackRook1);
 
-    var blackRook2 = new Piece('h', '1', '/assets/chess_pieces/Chess_symbols_r1_c3.png');
+    var blackRook2 = new Piece('h', '8', '/assets/chess_pieces/Chess_symbols_r2_c3.png', 'black');
     pieces.push(blackRook2);
 
 
     //Draw black knight 1 and 2
-    var blackKnight1 = new Piece('b', '1', '/assets/chess_pieces/Chess_symbols_r1_c4.png');
+    var blackKnight1 = new Piece('b', '8', '/assets/chess_pieces/Chess_symbols_r2_c4.png', 'black');
     pieces.push(blackKnight1);
 
-    var blackKnight2 = new Piece('g', '1', '/assets/chess_pieces/Chess_symbols_r1_c4.png');
+    var blackKnight2 = new Piece('g', '8', '/assets/chess_pieces/Chess_symbols_r2_c4.png', 'black');
     pieces.push(blackKnight2);
 
 
     //Draw black bishop 1 and 2
-    var blackBishop1 = new Piece('c', '1', '/assets/chess_pieces/Chess_symbols_r1_c5.png');
+    var blackBishop1 = new Piece('c', '8', '/assets/chess_pieces/Chess_symbols_r2_c5.png', 'black');
     pieces.push(blackBishop1);
 
-    var blackBishop2 = new Piece('f', '1', '/assets/chess_pieces/Chess_symbols_r1_c5.png');
+    var blackBishop2 = new Piece('f', '8', '/assets/chess_pieces/Chess_symbols_r2_c5.png', 'black');
     pieces.push(blackBishop2);
 
     //Draw black king
-    var blackKing = new Piece('e', '1', '/assets/chess_pieces/Chess_symbols_r1_c1.png');
+    var blackKing = new Piece('e', '8', '/assets/chess_pieces/Chess_symbols_r2_c1.png', 'black');
     pieces.push(blackKing);
 
     //Draw black queen
-    var blackQueen = new Piece('d', '1', '/assets/chess_pieces/Chess_symbols_r1_c2.png');
+    var blackQueen = new Piece('d', '8', '/assets/chess_pieces/Chess_symbols_r2_c2.png', 'black');
     pieces.push(blackQueen);
 
     //Draw black pawns
-    var blackPawn1 = new Piece('a', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png');
+    var blackPawn1 = new Piece('a', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png', 'black');
     pieces.push(blackPawn1);
-    var blackPawn2 = new Piece('b', '2', '/assets//chess_pieces/Chess_symbols_r1_c6.png');
+    var blackPawn2 = new Piece('b', '7', '/assets//chess_pieces/Chess_symbols_r2_c6.png', 'black');
     pieces.push(blackPawn2);
-    var blackPawn3 = new Piece('c', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png');
+    var blackPawn3 = new Piece('c', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png', 'black');
     pieces.push(blackPawn3);
-    var blackPawn4 = new Piece('d', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png');
+    var blackPawn4 = new Piece('d', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png', 'black');
     pieces.push(blackPawn4);
-    var blackPawn5 = new Piece('e', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png');
+    var blackPawn5 = new Piece('e', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png', 'black');
     pieces.push(blackPawn5);
-    var blackPawn6 = new Piece('f', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png');
+    var blackPawn6 = new Piece('f', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png', 'black');
     pieces.push(blackPawn6);
-    var blackPawn7 = new Piece('g', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png');
+    var blackPawn7 = new Piece('g', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png', 'black');
     pieces.push(blackPawn7);
-    var blackPawn8 = new Piece('h', '2', '/assets/chess_pieces/Chess_symbols_r1_c6.png');
+    var blackPawn8 = new Piece('h', '7', '/assets/chess_pieces/Chess_symbols_r2_c6.png', 'black');
     pieces.push(blackPawn8);
 
 
