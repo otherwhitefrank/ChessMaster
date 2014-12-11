@@ -3,7 +3,10 @@ class WelcomeController < ApplicationController
 
   def start_game
     #Retrieve player_1 and player_2 id's from post params
+    @this_game ||= init_game
+  end
 
+  def init_game
     player_1_id = params[:active_user]
     player_2_id = params[:selected_user]
 
