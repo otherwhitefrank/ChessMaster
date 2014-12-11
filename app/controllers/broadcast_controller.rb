@@ -70,6 +70,7 @@ class BroadcastController < ApplicationController
             send_message(channel_id, 'server:delete_piece', send_data)
           end
 
+
           curr_game.move(old_x, old_y, attempted_x, attempted_y)
 
           #Move is okay, do the move
